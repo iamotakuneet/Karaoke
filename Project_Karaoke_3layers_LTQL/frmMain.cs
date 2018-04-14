@@ -15,8 +15,7 @@ namespace Project_Karaoke_3layers_LTQL
     {
         public FrmMain() => InitializeComponent();
 
-        DataSet ds;
-        SqlDataAdapter daRoom;
+    
         
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -29,11 +28,7 @@ namespace Project_Karaoke_3layers_LTQL
             if (L.UserAdmin == false) hideAdmin();                
             buttonAdmin.selected = true;
             buttonShow.Visible = false;
-            string sConnect = @"Data Source=()"; //chuỗi kết nối
-            string sSelect = @""; //chuỗi truy vấn
-            //daRoom = new SqlDataAdapter(sSelect,sConnect); //khợi tạo đối tượng sqlDA để truy vấn lấy dữ liệu tự database về
-           // ds =new DataSet("");
-            //daRoom.Fill(ds, "tblRoom"); // đổ dữ liệu vào  1 bảng trong dataset
+
 
         }
 
