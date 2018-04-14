@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
 using System.Media;
 using System.Windows.Forms;
 using MetroFramework.Forms;
@@ -23,7 +22,7 @@ namespace Project_Karaoke_3layers_LTQL
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (txtLoginUser.Text == "adminLoli" && txtLoginPassword.Text == "iamgay")
+            if (txtLoginUser.Text == @"adminLoli" && txtLoginPassword.Text == @"iamgay")
             {
                 Hide();
                 FrmMain fm = new FrmMain();
@@ -31,7 +30,7 @@ namespace Project_Karaoke_3layers_LTQL
                 fm.Show();
                 UserAdmin = true;
             }
-            else if (txtLoginUser.Text == "userLoli" && txtLoginPassword.Text == "iamgay")
+            else if (txtLoginUser.Text == @"userLoli" && txtLoginPassword.Text == @"iamgay")
             {
                 Hide();
                 FrmMain fm = new FrmMain();
@@ -65,7 +64,7 @@ namespace Project_Karaoke_3layers_LTQL
             if (e.KeyCode == Keys.Enter)
             {
 
-                if (txtLoginUser.Text == "adminLoli" && txtLoginPassword.Text == "iamgay")
+                if (txtLoginUser.Text == @"adminLoli" && txtLoginPassword.Text == @"iamgay")
                 {
                     Hide();
                     FrmMain fm = new FrmMain();
@@ -74,7 +73,7 @@ namespace Project_Karaoke_3layers_LTQL
                     UserAdmin = true;
                 }
 
-                else if (txtLoginUser.Text == "userLoli" && txtLoginPassword.Text == "iamgay")
+                else if (txtLoginUser.Text == @"userLoli" && txtLoginPassword.Text == @"iamgay")
                 {
                     Hide();
                     FrmMain fm = new FrmMain();

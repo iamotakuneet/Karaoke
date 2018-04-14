@@ -1,13 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Media;
-using System.Threading;
 using System.Windows.Forms;
 using Bunifu.Framework.UI;
 using Project_Karaoke_3layers_LTQL.Properties;
-using System.Data.SqlClient;
 
 namespace Project_Karaoke_3layers_LTQL
 {
@@ -24,15 +21,12 @@ namespace Project_Karaoke_3layers_LTQL
             audio.Play();
             Form fLoginAlert = new FrmLoginAlert();
             fLoginAlert.ShowDialog();
-            FLogin L=new FLogin();
-            if (L.UserAdmin == false) hideAdmin();                
+            if (new FLogin().UserAdmin == false) HideAdmin();                
             buttonAdmin.selected = true;
             buttonShow.Visible = false;
-
-
         }
 
-        private void hideAdmin()
+        private void HideAdmin()
         {
                 buttonAdmin.Visible = false;
                 buttonBookRoom.Location = new Point(0, 108);
@@ -71,8 +65,8 @@ namespace Project_Karaoke_3layers_LTQL
             buttonShow.Visible = true;
             processBarRoom.Font = new Font("Noto Sans", 12, FontStyle.Regular);
             processBarRoom.Size = new Size(75, 75);
-            FLogin L = new FLogin();
-            if (L.UserAdmin == false)
+            FLogin l = new FLogin();
+            if (l.UserAdmin == false)
                 processBarRoom.Location = new Point(0, 518);
             processBarRoom.LineThickness = 3;
             processBarRoom.LineProgressThickness = 4;
@@ -91,8 +85,8 @@ namespace Project_Karaoke_3layers_LTQL
                 slideMenu.Visible = false;
                 processBarRoom.Font = new Font("Noto Sans", 26, FontStyle.Regular);
                 processBarRoom.Size = new Size(150, 150);
-                FLogin L = new FLogin();
-                if (L.UserAdmin == false)
+                FLogin l = new FLogin();
+                if (l.UserAdmin == false)
                     processBarRoom.Location = new Point(50, 479);
                 processBarRoom.LineThickness = 5;
                 processBarRoom.LineProgressThickness = 7 ;
