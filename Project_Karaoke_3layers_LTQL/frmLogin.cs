@@ -59,36 +59,7 @@ namespace Project_Karaoke_3layers_LTQL
 
         private void buttonShowPassWord_MouseLeave(object sender, EventArgs e) => txtLoginPassword.isPassword = true;
 
-        private void txtLoginPassword_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
 
-                if (txtLoginUser.Text == @"adminLoli" && txtLoginPassword.Text == @"iamgay")
-                {
-                    Hide();
-                    FrmMain fm = new FrmMain();
-                    fm.FormClosed += fm_FormClosed;
-                    fm.Show();
-                    UserAdmin = true;
-                }
-
-                else if (txtLoginUser.Text == @"userLoli" && txtLoginPassword.Text == @"iamgay")
-                {
-                    Hide();
-                    FrmMain fm = new FrmMain();
-                    fm.FormClosed += fm_FormClosed;
-                    fm.Show();
-                    UserAdmin = false;
-                }
-
-                else
-                {
-                    errorLoginAudio();
-                    labelUserPW.Visible = true;
-                }
-            }
-        }
     }//
 
 }//

@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\loli6.png" />
+    <Content Include="Resources\preloader.gif" />
     <Content Include="Resources\START_J2TEAM.ico" />
     <Content Include="Resources\START_J2TEAM.png" />
     <Content Include="Resources\START_J2TEAM2.ico" />
