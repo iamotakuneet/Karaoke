@@ -12,9 +12,22 @@ namespace Project_Karaoke_3layers_LTQL
 {
     public partial class OfferDrink : UserControl
     {
-        public OfferDrink()
+        private static OfferDrink _instance;
+
+        public static OfferDrink Instance
         {
-            InitializeComponent();
+            get
+            {
+                if (_instance == null)
+                    _instance = new OfferDrink();
+                return _instance;
+            }
+        }
+        public OfferDrink() => InitializeComponent();
+
+        private void OfferDrink_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

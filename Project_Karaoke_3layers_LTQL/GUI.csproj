@@ -66,11 +66,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin.cs">
+    <Compile Include="Admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="admin.Designer.cs">
-      <DependentUpon>admin.cs</DependentUpon>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="BookRoom.cs">
       <SubType>UserControl</SubType>
@@ -122,8 +122,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="admin.resx">
-      <DependentUpon>admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookRoom.resx">
       <DependentUpon>BookRoom.cs</DependentUpon>

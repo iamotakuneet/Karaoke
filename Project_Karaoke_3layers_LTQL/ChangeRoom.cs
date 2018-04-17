@@ -12,9 +12,23 @@ namespace Project_Karaoke_3layers_LTQL
 {
     public partial class ChangeRoom : UserControl
     {
-        public ChangeRoom()
+        private static ChangeRoom _instance;
+
+        public static ChangeRoom Instance
         {
-            InitializeComponent();
+            get
+            {
+                if (_instance == null)
+                    _instance = new ChangeRoom();
+                return _instance;
+            }
+        }
+
+        public ChangeRoom() => InitializeComponent();
+
+        private void ChangeRoom_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

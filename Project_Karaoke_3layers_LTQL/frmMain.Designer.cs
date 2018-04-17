@@ -34,9 +34,9 @@ namespace Project_Karaoke_3layers_LTQL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            BunifuAnimatorNS.Animation animation8 = new BunifuAnimatorNS.Animation();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.buttonMinimize = new Bunifu.Framework.UI.BunifuImageButton();
@@ -45,6 +45,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonExit = new Bunifu.Framework.UI.BunifuImageButton();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.slideMenu = new System.Windows.Forms.Panel();
+            this.buttonAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.processBarRoom = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.buttonOfferDrink = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonChangeRoom = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,7 +53,6 @@ namespace Project_Karaoke_3layers_LTQL
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBookRoom = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonPay = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.DragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.dragcontrol2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -60,14 +60,12 @@ namespace Project_Karaoke_3layers_LTQL
             this.DragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.DragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.hideSlide = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.panelMain = new System.Windows.Forms.Panel();
             this.notifyInTrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.dragControl7 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.DragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.hideProcessBarRoom = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.BorderRadius = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuSlider1 = new Bunifu.Framework.UI.BunifuSlider();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonShow)).BeginInit();
@@ -75,7 +73,6 @@ namespace Project_Karaoke_3layers_LTQL
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.slideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -182,6 +179,7 @@ namespace Project_Karaoke_3layers_LTQL
             // slideMenu
             // 
             this.slideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.slideMenu.Controls.Add(this.buttonAdmin);
             this.slideMenu.Controls.Add(this.processBarRoom);
             this.slideMenu.Controls.Add(this.buttonOfferDrink);
             this.slideMenu.Controls.Add(this.buttonChangeRoom);
@@ -189,7 +187,6 @@ namespace Project_Karaoke_3layers_LTQL
             this.slideMenu.Controls.Add(this.label1);
             this.slideMenu.Controls.Add(this.buttonBookRoom);
             this.slideMenu.Controls.Add(this.buttonPay);
-            this.slideMenu.Controls.Add(this.buttonAdmin);
             this.slideMenu.Controls.Add(this.buttonMenu);
             this.slideMenu.Controls.Add(this.Logo);
             this.hideProcessBarRoom.SetDecoration(this.slideMenu, BunifuAnimatorNS.DecorationType.None);
@@ -201,6 +198,44 @@ namespace Project_Karaoke_3layers_LTQL
             this.slideMenu.Size = new System.Drawing.Size(255, 697);
             this.slideMenu.TabIndex = 0;
             this.slideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashBoard_Paint);
+            // 
+            // buttonAdmin
+            // 
+            this.buttonAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.buttonAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAdmin.BorderRadius = 0;
+            this.buttonAdmin.ButtonText = "Admin";
+            this.buttonAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hideSlide.SetDecoration(this.buttonAdmin, BunifuAnimatorNS.DecorationType.None);
+            this.hideProcessBarRoom.SetDecoration(this.buttonAdmin, BunifuAnimatorNS.DecorationType.None);
+            this.buttonAdmin.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonAdmin.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonAdmin.Iconimage")));
+            this.buttonAdmin.Iconimage_right = null;
+            this.buttonAdmin.Iconimage_right_Selected = null;
+            this.buttonAdmin.Iconimage_Selected = null;
+            this.buttonAdmin.IconMarginLeft = 18;
+            this.buttonAdmin.IconMarginRight = 0;
+            this.buttonAdmin.IconRightVisible = true;
+            this.buttonAdmin.IconRightZoom = 0D;
+            this.buttonAdmin.IconVisible = true;
+            this.buttonAdmin.IconZoom = 70D;
+            this.buttonAdmin.IsTab = true;
+            this.buttonAdmin.Location = new System.Drawing.Point(0, 105);
+            this.buttonAdmin.Margin = new System.Windows.Forms.Padding(8);
+            this.buttonAdmin.Name = "buttonAdmin";
+            this.buttonAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.buttonAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonAdmin.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonAdmin.selected = true;
+            this.buttonAdmin.Size = new System.Drawing.Size(255, 53);
+            this.buttonAdmin.TabIndex = 2;
+            this.buttonAdmin.Text = "Admin";
+            this.buttonAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonAdmin.Textcolor = System.Drawing.Color.White;
+            this.buttonAdmin.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdmin.Click += new System.EventHandler(this.buttonAdmin_Click);
             // 
             // processBarRoom
             // 
@@ -266,6 +301,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonOfferDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonOfferDrink.Textcolor = System.Drawing.Color.White;
             this.buttonOfferDrink.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOfferDrink.Click += new System.EventHandler(this.buttonOfferDrink_Click);
             // 
             // buttonChangeRoom
             // 
@@ -291,7 +327,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonChangeRoom.IconVisible = true;
             this.buttonChangeRoom.IconZoom = 68D;
             this.buttonChangeRoom.IsTab = true;
-            this.buttonChangeRoom.Location = new System.Drawing.Point(0, 243);
+            this.buttonChangeRoom.Location = new System.Drawing.Point(0, 174);
             this.buttonChangeRoom.Margin = new System.Windows.Forms.Padding(8);
             this.buttonChangeRoom.Name = "buttonChangeRoom";
             this.buttonChangeRoom.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -304,6 +340,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonChangeRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonChangeRoom.Textcolor = System.Drawing.Color.White;
             this.buttonChangeRoom.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonChangeRoom.Click += new System.EventHandler(this.buttonChangeRoom_Click);
             // 
             // buttonLogOut
             // 
@@ -381,7 +418,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonBookRoom.IconVisible = true;
             this.buttonBookRoom.IconZoom = 70D;
             this.buttonBookRoom.IsTab = true;
-            this.buttonBookRoom.Location = new System.Drawing.Point(0, 174);
+            this.buttonBookRoom.Location = new System.Drawing.Point(3, 243);
             this.buttonBookRoom.Margin = new System.Windows.Forms.Padding(8);
             this.buttonBookRoom.Name = "buttonBookRoom";
             this.buttonBookRoom.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -394,6 +431,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonBookRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonBookRoom.Textcolor = System.Drawing.Color.White;
             this.buttonBookRoom.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBookRoom.Click += new System.EventHandler(this.buttonBookRoom_Click_1);
             // 
             // buttonPay
             // 
@@ -433,44 +471,6 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonPay.Textcolor = System.Drawing.Color.White;
             this.buttonPay.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
-            // 
-            // buttonAdmin
-            // 
-            this.buttonAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.buttonAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonAdmin.BorderRadius = 0;
-            this.buttonAdmin.ButtonText = "Admin";
-            this.buttonAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hideSlide.SetDecoration(this.buttonAdmin, BunifuAnimatorNS.DecorationType.None);
-            this.hideProcessBarRoom.SetDecoration(this.buttonAdmin, BunifuAnimatorNS.DecorationType.None);
-            this.buttonAdmin.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonAdmin.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("buttonAdmin.Iconimage")));
-            this.buttonAdmin.Iconimage_right = null;
-            this.buttonAdmin.Iconimage_right_Selected = null;
-            this.buttonAdmin.Iconimage_Selected = null;
-            this.buttonAdmin.IconMarginLeft = 18;
-            this.buttonAdmin.IconMarginRight = 0;
-            this.buttonAdmin.IconRightVisible = true;
-            this.buttonAdmin.IconRightZoom = 0D;
-            this.buttonAdmin.IconVisible = true;
-            this.buttonAdmin.IconZoom = 70D;
-            this.buttonAdmin.IsTab = true;
-            this.buttonAdmin.Location = new System.Drawing.Point(0, 108);
-            this.buttonAdmin.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonAdmin.Name = "buttonAdmin";
-            this.buttonAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.buttonAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonAdmin.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonAdmin.selected = false;
-            this.buttonAdmin.Size = new System.Drawing.Size(255, 53);
-            this.buttonAdmin.TabIndex = 2;
-            this.buttonAdmin.Text = "Admin";
-            this.buttonAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonAdmin.Textcolor = System.Drawing.Color.White;
-            this.buttonAdmin.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdmin.Click += new System.EventHandler(this.buttonAdmin_Click);
             // 
             // buttonMenu
             // 
@@ -527,24 +527,35 @@ namespace Project_Karaoke_3layers_LTQL
             // 
             this.hideSlide.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.hideSlide.Cursor = null;
-            animation12.AnimateOnlyDifferences = true;
-            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
-            animation12.LeafCoeff = 0F;
-            animation12.MaxTime = 1F;
-            animation12.MinTime = 0F;
-            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
-            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
-            animation12.MosaicSize = 1;
-            animation12.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation12.RotateCoeff = 0F;
-            animation12.RotateLimit = 0F;
-            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
-            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
-            animation12.TimeCoeff = 2F;
-            animation12.TransparencyCoeff = 0F;
-            this.hideSlide.DefaultAnimation = animation12;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 1;
+            animation7.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 2F;
+            animation7.TransparencyCoeff = 0F;
+            this.hideSlide.DefaultAnimation = animation7;
             this.hideSlide.Interval = 1;
             this.hideSlide.MaxAnimationTime = 800;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.hideProcessBarRoom.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
+            this.hideSlide.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(255, 38);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1075, 697);
+            this.panelMain.TabIndex = 2;
             // 
             // notifyInTrayIcon
             // 
@@ -571,22 +582,22 @@ namespace Project_Karaoke_3layers_LTQL
             // 
             this.hideProcessBarRoom.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
             this.hideProcessBarRoom.Cursor = null;
-            animation11.AnimateOnlyDifferences = true;
-            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
-            animation11.LeafCoeff = 0F;
-            animation11.MaxTime = 1F;
-            animation11.MinTime = 0F;
-            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
-            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
-            animation11.MosaicSize = 0;
-            animation11.Padding = new System.Windows.Forms.Padding(0);
-            animation11.RotateCoeff = 0F;
-            animation11.RotateLimit = 0F;
-            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
-            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
-            animation11.TimeCoeff = 0F;
-            animation11.TransparencyCoeff = 0F;
-            this.hideProcessBarRoom.DefaultAnimation = animation11;
+            animation8.AnimateOnlyDifferences = true;
+            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
+            animation8.LeafCoeff = 0F;
+            animation8.MaxTime = 1F;
+            animation8.MinTime = 0F;
+            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
+            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
+            animation8.MosaicSize = 0;
+            animation8.Padding = new System.Windows.Forms.Padding(0);
+            animation8.RotateCoeff = 0F;
+            animation8.RotateLimit = 0F;
+            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
+            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            animation8.TimeCoeff = 0F;
+            animation8.TransparencyCoeff = 0F;
+            this.hideProcessBarRoom.DefaultAnimation = animation8;
             this.hideProcessBarRoom.Interval = 1;
             this.hideProcessBarRoom.MaxAnimationTime = 800;
             // 
@@ -595,51 +606,13 @@ namespace Project_Karaoke_3layers_LTQL
             this.BorderRadius.ElipseRadius = 5;
             this.BorderRadius.TargetControl = this;
             // 
-            // bunifuSlider1
-            // 
-            this.bunifuSlider1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSlider1.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuSlider1.BorderRadius = 0;
-            this.hideProcessBarRoom.SetDecoration(this.bunifuSlider1, BunifuAnimatorNS.DecorationType.None);
-            this.hideSlide.SetDecoration(this.bunifuSlider1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSlider1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(255)))));
-            this.bunifuSlider1.Location = new System.Drawing.Point(42, 5);
-            this.bunifuSlider1.MaximumValue = 100;
-            this.bunifuSlider1.Name = "bunifuSlider1";
-            this.bunifuSlider1.Size = new System.Drawing.Size(991, 30);
-            this.bunifuSlider1.TabIndex = 2;
-            this.bunifuSlider1.Value = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.bunifuSlider1);
-            this.hideProcessBarRoom.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.hideSlide.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(255, 697);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1075, 38);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.hideProcessBarRoom.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.hideSlide.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(255, 38);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1075, 659);
-            this.panel2.TabIndex = 4;
-            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1330, 735);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.slideMenu);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelHeader);
@@ -661,7 +634,6 @@ namespace Project_Karaoke_3layers_LTQL
             this.slideMenu.ResumeLayout(false);
             this.slideMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -695,8 +667,6 @@ namespace Project_Karaoke_3layers_LTQL
         private BunifuImageButton buttonMinimize;
         private BunifuImageButton buttonExit;
         private BunifuElipse BorderRadius;
-        private Panel panel1;
-        private BunifuSlider bunifuSlider1;
-        private Panel panel2;
+        private Panel panelMain;
     }
 }

@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace Project_Karaoke_3layers_LTQL
 {
-    public partial class admin : UserControl
+    public partial class Admin : UserControl
     {
-        public admin()
+        private static Admin _instance;
+
+        public static Admin Instance
         {
-            InitializeComponent();
+            get
+            {
+                if(_instance==null)
+                    _instance=new Admin();
+                return _instance;
+            }
+        }
+        public Admin() => InitializeComponent();
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

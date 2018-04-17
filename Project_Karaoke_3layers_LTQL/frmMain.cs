@@ -10,8 +10,16 @@ namespace Project_Karaoke_3layers_LTQL
 {
     public partial class FrmMain : Form
     {
-        public FrmMain() => InitializeComponent();
-
+        public FrmMain()
+        {
+            InitializeComponent();
+            
+        }
+        Admin ucAdmin = new Admin();
+        BookRoom ucBookRoom = new BookRoom();
+        ChangeRoom uChangeRoom = new ChangeRoom();
+        OfferDrink ucOfferDrink = new OfferDrink();
+        Pay ucPay = new Pay();
         private void frmMain_Load(object sender, EventArgs e)
         {
             SoundPlayer audio = new SoundPlayer(Resources.nicoNicoNi);
@@ -76,7 +84,7 @@ namespace Project_Karaoke_3layers_LTQL
             }
         }
 
-        private void buttonAdmin_Click(object sender, EventArgs e) { }
+       
 
         private void buttonMinimize_Click(object sender, EventArgs e)
         {
@@ -93,7 +101,7 @@ namespace Project_Karaoke_3layers_LTQL
             frmAlert.ShowDialog();
         }
 
-        private void buttonPay_Click(object sender, EventArgs e) { }
+     
 
         private void FrmMain_Resize(object sender, EventArgs e)
         {
@@ -127,6 +135,86 @@ namespace Project_Karaoke_3layers_LTQL
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e) => Close();
 
-        
-    }
-}
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+            if (!panelMain.Controls.Contains(Admin.Instance))
+            {
+                panelMain.Controls.Add(Admin.Instance);
+                Admin.Instance.Dock = DockStyle.Fill;
+                Admin.Instance.BringToFront();
+            }
+            else
+            {
+                Admin.Instance.BringToFront();
+            }
+        }
+
+        private void buttonBookRoom_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void buttonChangeRoom_Click(object sender, EventArgs e)
+        {
+            if (!panelMain.Controls.Contains(ChangeRoom.Instance))
+            {
+                panelMain.Controls.Add(ChangeRoom.Instance);
+                ChangeRoom.Instance.Dock = DockStyle.Fill;
+                ChangeRoom.Instance.BringToFront();
+            }
+            else
+            {
+                ChangeRoom.Instance.BringToFront();
+            }
+        }
+
+        private void buttonBookRoom_Click_1(object sender, EventArgs e)
+        {
+            if (!panelMain.Controls.Contains(BookRoom.Instance))
+            {
+                panelMain.Controls.Add(BookRoom.Instance);
+                BookRoom.Instance.Dock = DockStyle.Fill;
+                BookRoom.Instance.BringToFront();
+            }
+            else
+            {
+                BookRoom.Instance.BringToFront();
+            }
+        }
+
+        private void buttonOfferDrink_Click(object sender, EventArgs e)
+        {
+            if (!panelMain.Controls.Contains(OfferDrink.Instance))
+            {
+                panelMain.Controls.Add(OfferDrink.Instance);
+                Admin.Instance.Dock = DockStyle.Fill;
+                Admin.Instance.BringToFront();
+            }
+            else
+            {
+                OfferDrink.Instance.BringToFront();
+            }
+        }
+
+        private void buttonPay_Click(object sender, EventArgs e)
+        {
+            if (!panelMain.Controls.Contains(Pay.Instance))
+            {
+                panelMain.Controls.Add(Pay.Instance);
+                Pay.Instance.Dock = DockStyle.Fill;
+                Pay.Instance.BringToFront();
+            }
+            else
+            {
+                Pay.Instance.BringToFront();
+            }
+        }
+
+
+    }//
+}//
