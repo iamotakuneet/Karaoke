@@ -79,14 +79,14 @@ namespace Project_Karaoke_3layers_LTQL
        
         private void buttonMinimize_Click(object sender, EventArgs e)
         {
-            SoundPlayer audio = new SoundPlayer(Resources.Minimize);
+            SoundPlayer audio = new SoundPlayer(Resources.Minimize); 
             audio.Play();
             WindowState = FormWindowState.Minimized;
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            SoundPlayer audio = new SoundPlayer(Resources.oniiChan2);
+            SoundPlayer audio = new SoundPlayer(Resources.oniiChan2); // tạo  audio và lấy nhạc từ resource đem vào audio ( chỉ nhận đuôi .wav)
             audio.Play();
             Alert frmAlert = new Alert();
             frmAlert.ShowDialog();
@@ -127,11 +127,11 @@ namespace Project_Karaoke_3layers_LTQL
 
         private void buttonAdmin_Click(object sender, EventArgs e)
         {
-            if (!panelMain.Controls.Contains(Admin.Instance))
+            if (!panelMain.Controls.Contains(Admin.Instance)) //kt nếu panel đang hiện control user khác không phải thì reset lại và hiện user control admin
             {
                 panelMain.Controls.Add(Admin.Instance);
-                Admin.Instance.Dock = DockStyle.Fill;
-                Admin.Instance.BringToFront();
+                Admin.Instance.Dock = DockStyle.Fill; // cho dock nằm trọn trong panel
+                Admin.Instance.BringToFront(); //đưa tab đã chọn lên phía trước
             }
             else
             {
