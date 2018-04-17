@@ -34,8 +34,8 @@ namespace Project_Karaoke_3layers_LTQL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelHeader = new System.Windows.Forms.Panel();
@@ -65,6 +65,9 @@ namespace Project_Karaoke_3layers_LTQL
             this.DragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.hideProcessBarRoom = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.BorderRadius = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuSlider1 = new Bunifu.Framework.UI.BunifuSlider();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonShow)).BeginInit();
@@ -72,6 +75,7 @@ namespace Project_Karaoke_3layers_LTQL
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.slideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -523,22 +527,22 @@ namespace Project_Karaoke_3layers_LTQL
             // 
             this.hideSlide.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.hideSlide.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.hideSlide.DefaultAnimation = animation2;
+            animation12.AnimateOnlyDifferences = true;
+            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
+            animation12.LeafCoeff = 0F;
+            animation12.MaxTime = 1F;
+            animation12.MinTime = 0F;
+            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
+            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
+            animation12.MosaicSize = 1;
+            animation12.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation12.RotateCoeff = 0F;
+            animation12.RotateLimit = 0F;
+            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
+            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
+            animation12.TimeCoeff = 2F;
+            animation12.TransparencyCoeff = 0F;
+            this.hideSlide.DefaultAnimation = animation12;
             this.hideSlide.Interval = 1;
             this.hideSlide.MaxAnimationTime = 800;
             // 
@@ -567,22 +571,22 @@ namespace Project_Karaoke_3layers_LTQL
             // 
             this.hideProcessBarRoom.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
             this.hideProcessBarRoom.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.hideProcessBarRoom.DefaultAnimation = animation1;
+            animation11.AnimateOnlyDifferences = true;
+            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
+            animation11.LeafCoeff = 0F;
+            animation11.MaxTime = 1F;
+            animation11.MinTime = 0F;
+            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
+            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
+            animation11.MosaicSize = 0;
+            animation11.Padding = new System.Windows.Forms.Padding(0);
+            animation11.RotateCoeff = 0F;
+            animation11.RotateLimit = 0F;
+            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
+            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
+            animation11.TimeCoeff = 0F;
+            animation11.TransparencyCoeff = 0F;
+            this.hideProcessBarRoom.DefaultAnimation = animation11;
             this.hideProcessBarRoom.Interval = 1;
             this.hideProcessBarRoom.MaxAnimationTime = 800;
             // 
@@ -591,12 +595,51 @@ namespace Project_Karaoke_3layers_LTQL
             this.BorderRadius.ElipseRadius = 5;
             this.BorderRadius.TargetControl = this;
             // 
+            // bunifuSlider1
+            // 
+            this.bunifuSlider1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSlider1.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.bunifuSlider1.BorderRadius = 0;
+            this.hideProcessBarRoom.SetDecoration(this.bunifuSlider1, BunifuAnimatorNS.DecorationType.None);
+            this.hideSlide.SetDecoration(this.bunifuSlider1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSlider1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(255)))));
+            this.bunifuSlider1.Location = new System.Drawing.Point(42, 5);
+            this.bunifuSlider1.MaximumValue = 100;
+            this.bunifuSlider1.Name = "bunifuSlider1";
+            this.bunifuSlider1.Size = new System.Drawing.Size(991, 30);
+            this.bunifuSlider1.TabIndex = 2;
+            this.bunifuSlider1.Value = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.bunifuSlider1);
+            this.hideProcessBarRoom.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.hideSlide.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(255, 697);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1075, 38);
+            this.panel1.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.hideProcessBarRoom.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.hideSlide.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(255, 38);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1075, 659);
+            this.panel2.TabIndex = 4;
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1330, 735);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.slideMenu);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelHeader);
@@ -618,6 +661,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.slideMenu.ResumeLayout(false);
             this.slideMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -651,5 +695,8 @@ namespace Project_Karaoke_3layers_LTQL
         private BunifuImageButton buttonMinimize;
         private BunifuImageButton buttonExit;
         private BunifuElipse BorderRadius;
+        private Panel panel1;
+        private BunifuSlider bunifuSlider1;
+        private Panel panel2;
     }
 }

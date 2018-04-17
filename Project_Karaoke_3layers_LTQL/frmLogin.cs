@@ -30,6 +30,8 @@ namespace Project_Karaoke_3layers_LTQL
                 fm.FormClosed += fm_FormClosed;
                 fm.Show();
                 UserAdmin = true;
+                
+               
             }
             else if (txtLoginUser.Text == @"userLoli" && txtLoginPassword.Text == @"iamgay")
             {

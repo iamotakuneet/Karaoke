@@ -66,6 +66,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookRoom.Designer.cs">
+      <DependentUpon>BookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangeRoom.Designer.cs">
+      <DependentUpon>ChangeRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="exitAlert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +108,29 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="OfferDrink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OfferDrink.Designer.cs">
+      <DependentUpon>OfferDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pay.Designer.cs">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRoom.resx">
+      <DependentUpon>BookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRoom.resx">
+      <DependentUpon>ChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="exitAlert.resx">
       <DependentUpon>exitAlert.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +142,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfferDrink.resx">
+      <DependentUpon>OfferDrink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay.resx">
+      <DependentUpon>Pay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

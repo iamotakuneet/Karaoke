@@ -12,29 +12,14 @@ namespace Project_Karaoke_3layers_LTQL
     {
         public FrmMain() => InitializeComponent();
 
-    
-        
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             SoundPlayer audio = new SoundPlayer(Resources.nicoNicoNi);
             audio.Play();
             Form fLoginAlert = new FrmLoginAlert();
-            fLoginAlert.ShowDialog();
-            if (new FLogin().UserAdmin == false) HideAdmin();                
+            fLoginAlert.ShowDialog();        
             buttonAdmin.selected = true;
             buttonShow.Visible = false;
-        }
-
-        private void HideAdmin()
-        {
-                buttonAdmin.Visible = false;
-                buttonBookRoom.Location = new Point(0, 108);
-                buttonChangeRoom.Location = new Point(0, 174);
-                buttonOfferDrink.Location = new Point(0, 243);
-                buttonPay.Location = new Point(0, 312);
-                buttonLogOut.Location = new Point(0, 381);
-                processBarRoom.Location = new Point(50, 479);
         }
 
         public FrmMain(IContainer components, Panel panelLeft, Panel panelTop, PictureBox pictureBox1, Panel panelDashBoard, BunifuImageButton bunifuImageButton1)
@@ -65,9 +50,7 @@ namespace Project_Karaoke_3layers_LTQL
             buttonShow.Visible = true;
             processBarRoom.Font = new Font("Noto Sans", 12, FontStyle.Regular);
             processBarRoom.Size = new Size(75, 75);
-            FLogin l = new FLogin();
-            if (l.UserAdmin == false)
-                processBarRoom.Location = new Point(0, 518);
+            processBarRoom.Location = new Point(0, 560);
             processBarRoom.LineThickness = 3;
             processBarRoom.LineProgressThickness = 4;
             slideMenu.Visible = false;
@@ -85,9 +68,7 @@ namespace Project_Karaoke_3layers_LTQL
                 slideMenu.Visible = false;
                 processBarRoom.Font = new Font("Noto Sans", 26, FontStyle.Regular);
                 processBarRoom.Size = new Size(150, 150);
-                FLogin l = new FLogin();
-                if (l.UserAdmin == false)
-                    processBarRoom.Location = new Point(50, 479);
+                processBarRoom.Location = new Point(50, 520);
                 processBarRoom.LineThickness = 5;
                 processBarRoom.LineProgressThickness = 7 ;
                 hideSlide.ShowSync(slideMenu);
