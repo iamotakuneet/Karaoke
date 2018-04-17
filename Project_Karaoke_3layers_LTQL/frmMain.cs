@@ -131,10 +131,10 @@ namespace Project_Karaoke_3layers_LTQL
             {
                 panelMain.Controls.Add(Admin.Instance);
                 Admin.Instance.Dock = DockStyle.Fill; // cho dock nằm trọn trong panel
-                Admin.Instance.BringToFront(); //đưa tab đã chọn lên phía trước
+                Admin.Instance.BringToFront(); //đưa tab đã chọn lên phía trước     
             }
             else
-            {
+            {     
                 Admin.Instance.BringToFront();
             }
         }

@@ -49,7 +49,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.Controls.Add(this.label1);
             this.Name = "ChangeRoom";
-            this.Size = new System.Drawing.Size(1075, 659);
+            this.Size = new System.Drawing.Size(1075, 697);
             this.Load += new System.EventHandler(this.ChangeRoom_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
