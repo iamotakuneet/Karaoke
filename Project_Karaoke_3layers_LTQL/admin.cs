@@ -29,5 +29,40 @@ namespace Project_Karaoke_3layers_LTQL
         {
 
         }
+
+        private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonDrinkEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDrinkView_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDrinkID_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDrinkAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.components = components;
             this.panelLeft = panelLeft;
             panelHeader = panelTop;
-            Logo = pictureBox1;
+            Home = pictureBox1;
             slideMenu = panelDashBoard;
             buttonMenu = bunifuImageButton1;
         }
@@ -195,6 +195,9 @@ namespace Project_Karaoke_3layers_LTQL
             }
         }
 
+        private void Home_Click(object sender, EventArgs e)
+        {
 
+        }
     }//
 }//
