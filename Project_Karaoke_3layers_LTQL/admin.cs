@@ -64,5 +64,10 @@ namespace Project_Karaoke_3layers_LTQL
         {
 
         }
+
+        private void tbDrink_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

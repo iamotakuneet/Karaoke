@@ -28,53 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbAccount = new MetroFramework.Controls.MetroTabPage();
             this.tbRoom = new MetroFramework.Controls.MetroTabPage();
-            this.tbCategory = new MetroFramework.Controls.MetroTabPage();
             this.tbDrink = new MetroFramework.Controls.MetroTabPage();
-            this.tbRevenue = new MetroFramework.Controls.MetroTabPage();
-            this.tabControlAdmin = new MetroFramework.Controls.MetroTabControl();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.panelFill = new System.Windows.Forms.Panel();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.buttonStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panelMainDrinkLeft = new System.Windows.Forms.Panel();
+            this.panelMainDrink = new System.Windows.Forms.Panel();
             this.dgvDrink = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.buttonDrinkAdd = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonDrinkDelete = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonDrinkEdit = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panelMainDrinkRight = new System.Windows.Forms.Panel();
             this.panelTopRight = new System.Windows.Forms.Panel();
-            this.panelTopLeft = new System.Windows.Forms.Panel();
-            this.buttonDrinkView = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtSearchDrinkName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.buttonDrinkSearch = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panelMainDrinkRight = new System.Windows.Forms.Panel();
             this.txtDrinkID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDrinkname = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDrinkname = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxDrinkCategory = new System.Windows.Forms.ComboBox();
             this.numericUpDownPrice = new System.Windows.Forms.NumericUpDown();
+            this.panelTopLeft = new System.Windows.Forms.Panel();
+            this.buttonDrinkDelete = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonDrinkAdd = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonDrinkEdit = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonDrinkView = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tbRevenue = new MetroFramework.Controls.MetroTabPage();
+            this.panelFill = new System.Windows.Forms.Panel();
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.buttonStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tabControlAdmin = new MetroFramework.Controls.MetroTabControl();
+            this.panelMainDrinkLeft = new System.Windows.Forms.Panel();
             this.tbDrink.SuspendLayout();
+            this.panelMainDrink.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDrink)).BeginInit();
+            this.panelMainDrinkRight.SuspendLayout();
+            this.panelTopRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
+            this.panelTopLeft.SuspendLayout();
             this.tbRevenue.SuspendLayout();
-            this.tabControlAdmin.SuspendLayout();
-            this.panelHeader.SuspendLayout();
             this.panelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.panelHeader.SuspendLayout();
+            this.tabControlAdmin.SuspendLayout();
             this.panelMainDrinkLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDrink)).BeginInit();
-            this.panelTopRight.SuspendLayout();
-            this.panelTopLeft.SuspendLayout();
-            this.panelMainDrinkRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // tbAccount
@@ -108,25 +109,10 @@
             this.tbRoom.VerticalScrollbarHighlightOnWheel = false;
             this.tbRoom.VerticalScrollbarSize = 10;
             // 
-            // tbCategory
-            // 
-            this.tbCategory.HorizontalScrollbarBarColor = true;
-            this.tbCategory.HorizontalScrollbarHighlightOnWheel = false;
-            this.tbCategory.HorizontalScrollbarSize = 10;
-            this.tbCategory.Location = new System.Drawing.Point(4, 38);
-            this.tbCategory.Name = "tbCategory";
-            this.tbCategory.Size = new System.Drawing.Size(1067, 655);
-            this.tbCategory.TabIndex = 2;
-            this.tbCategory.Text = "Category";
-            this.tbCategory.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tbCategory.VerticalScrollbarBarColor = true;
-            this.tbCategory.VerticalScrollbarHighlightOnWheel = false;
-            this.tbCategory.VerticalScrollbarSize = 10;
-            // 
             // tbDrink
             // 
             this.tbDrink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.tbDrink.Controls.Add(this.panelMainDrinkLeft);
+            this.tbDrink.Controls.Add(this.panelMainDrink);
             this.tbDrink.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDrink.ForeColor = System.Drawing.Color.White;
             this.tbDrink.HorizontalScrollbarBarColor = true;
@@ -141,180 +127,35 @@
             this.tbDrink.VerticalScrollbarBarColor = true;
             this.tbDrink.VerticalScrollbarHighlightOnWheel = false;
             this.tbDrink.VerticalScrollbarSize = 10;
+            this.tbDrink.Click += new System.EventHandler(this.tbDrink_Click);
             // 
-            // tbRevenue
+            // panelMainDrink
             // 
-            this.tbRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.tbRevenue.Controls.Add(this.panelFill);
-            this.tbRevenue.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRevenue.ForeColor = System.Drawing.Color.White;
-            this.tbRevenue.HorizontalScrollbarBarColor = true;
-            this.tbRevenue.HorizontalScrollbarHighlightOnWheel = false;
-            this.tbRevenue.HorizontalScrollbarSize = 10;
-            this.tbRevenue.Location = new System.Drawing.Point(4, 38);
-            this.tbRevenue.Name = "tbRevenue";
-            this.tbRevenue.Size = new System.Drawing.Size(1067, 655);
-            this.tbRevenue.TabIndex = 0;
-            this.tbRevenue.Text = "Revenue";
-            this.tbRevenue.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tbRevenue.VerticalScrollbarBarColor = true;
-            this.tbRevenue.VerticalScrollbarHighlightOnWheel = false;
-            this.tbRevenue.VerticalScrollbarSize = 10;
-            // 
-            // tabControlAdmin
-            // 
-            this.tabControlAdmin.Controls.Add(this.tbRevenue);
-            this.tabControlAdmin.Controls.Add(this.tbDrink);
-            this.tabControlAdmin.Controls.Add(this.tbCategory);
-            this.tabControlAdmin.Controls.Add(this.tbRoom);
-            this.tabControlAdmin.Controls.Add(this.tbAccount);
-            this.tabControlAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlAdmin.Location = new System.Drawing.Point(0, 0);
-            this.tabControlAdmin.Name = "tabControlAdmin";
-            this.tabControlAdmin.SelectedIndex = 1;
-            this.tabControlAdmin.Size = new System.Drawing.Size(1075, 697);
-            this.tabControlAdmin.TabIndex = 0;
-            this.tabControlAdmin.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tabControlAdmin.UseSelectable = true;
-            // 
-            // panelHeader
-            // 
-            this.panelHeader.Controls.Add(this.buttonStatistics);
-            this.panelHeader.Controls.Add(this.bunifuDatepicker2);
-            this.panelHeader.Controls.Add(this.bunifuDatepicker1);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1067, 55);
-            this.panelHeader.TabIndex = 3;
-            // 
-            // panelFill
-            // 
-            this.panelFill.Controls.Add(this.panelHeader);
-            this.panelFill.Controls.Add(this.bunifuCustomDataGrid1);
-            this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill.Location = new System.Drawing.Point(0, 0);
-            this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(1067, 655);
-            this.panelFill.TabIndex = 2;
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1067, 655);
-            this.bunifuCustomDataGrid1.TabIndex = 0;
-            // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = "";
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(3, 10);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
-            this.bunifuDatepicker1.TabIndex = 0;
-            this.bunifuDatepicker1.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
-            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
-            // 
-            // bunifuDatepicker2
-            // 
-            this.bunifuDatepicker2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker2.FormatCustom = "";
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(765, 10);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(303, 36);
-            this.bunifuDatepicker2.TabIndex = 1;
-            this.bunifuDatepicker2.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
-            // 
-            // buttonStatistics
-            // 
-            this.buttonStatistics.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.buttonStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonStatistics.BorderRadius = 0;
-            this.buttonStatistics.ButtonText = "Statistics";
-            this.buttonStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonStatistics.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonStatistics.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonStatistics.Iconimage = null;
-            this.buttonStatistics.Iconimage_right = null;
-            this.buttonStatistics.Iconimage_right_Selected = null;
-            this.buttonStatistics.Iconimage_Selected = null;
-            this.buttonStatistics.IconMarginLeft = 0;
-            this.buttonStatistics.IconMarginRight = 0;
-            this.buttonStatistics.IconRightVisible = false;
-            this.buttonStatistics.IconRightZoom = 0D;
-            this.buttonStatistics.IconVisible = false;
-            this.buttonStatistics.IconZoom = 90D;
-            this.buttonStatistics.IsTab = false;
-            this.buttonStatistics.Location = new System.Drawing.Point(386, 10);
-            this.buttonStatistics.Name = "buttonStatistics";
-            this.buttonStatistics.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.buttonStatistics.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonStatistics.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonStatistics.selected = false;
-            this.buttonStatistics.Size = new System.Drawing.Size(241, 36);
-            this.buttonStatistics.TabIndex = 4;
-            this.buttonStatistics.Text = "Statistics";
-            this.buttonStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonStatistics.Textcolor = System.Drawing.Color.White;
-            this.buttonStatistics.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // panelMainDrinkLeft
-            // 
-            this.panelMainDrinkLeft.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelMainDrinkLeft.Controls.Add(this.panelTopLeft);
-            this.panelMainDrinkLeft.Controls.Add(this.panelMainDrinkRight);
-            this.panelMainDrinkLeft.Controls.Add(this.dgvDrink);
-            this.panelMainDrinkLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainDrinkLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelMainDrinkLeft.Name = "panelMainDrinkLeft";
-            this.panelMainDrinkLeft.Size = new System.Drawing.Size(1067, 655);
-            this.panelMainDrinkLeft.TabIndex = 3;
+            this.panelMainDrink.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelMainDrink.Controls.Add(this.panelMainDrinkLeft);
+            this.panelMainDrink.Controls.Add(this.panelTopLeft);
+            this.panelMainDrink.Controls.Add(this.panelMainDrinkRight);
+            this.panelMainDrink.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainDrink.Location = new System.Drawing.Point(0, 0);
+            this.panelMainDrink.Name = "panelMainDrink";
+            this.panelMainDrink.Size = new System.Drawing.Size(1067, 655);
+            this.panelMainDrink.TabIndex = 3;
             // 
             // dgvDrink
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDrink.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
             this.dgvDrink.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDrink.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDrink.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDrink.DoubleBuffered = true;
@@ -324,124 +165,25 @@
             this.dgvDrink.Location = new System.Drawing.Point(0, 0);
             this.dgvDrink.Name = "dgvDrink";
             this.dgvDrink.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvDrink.Size = new System.Drawing.Size(1067, 655);
+            this.dgvDrink.Size = new System.Drawing.Size(528, 600);
             this.dgvDrink.TabIndex = 0;
             // 
-            // buttonDrinkAdd
+            // panelMainDrinkRight
             // 
-            this.buttonDrinkAdd.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonDrinkAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDrinkAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDrinkAdd.BorderRadius = 0;
-            this.buttonDrinkAdd.ButtonText = "Add";
-            this.buttonDrinkAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDrinkAdd.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonDrinkAdd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonDrinkAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkAdd.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonDrinkAdd.Iconimage = null;
-            this.buttonDrinkAdd.Iconimage_right = null;
-            this.buttonDrinkAdd.Iconimage_right_Selected = null;
-            this.buttonDrinkAdd.Iconimage_Selected = null;
-            this.buttonDrinkAdd.IconMarginLeft = 0;
-            this.buttonDrinkAdd.IconMarginRight = 0;
-            this.buttonDrinkAdd.IconRightVisible = true;
-            this.buttonDrinkAdd.IconRightZoom = 0D;
-            this.buttonDrinkAdd.IconVisible = false;
-            this.buttonDrinkAdd.IconZoom = 90D;
-            this.buttonDrinkAdd.IsTab = false;
-            this.buttonDrinkAdd.Location = new System.Drawing.Point(385, 0);
-            this.buttonDrinkAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.buttonDrinkAdd.Name = "buttonDrinkAdd";
-            this.buttonDrinkAdd.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkAdd.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonDrinkAdd.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonDrinkAdd.selected = false;
-            this.buttonDrinkAdd.Size = new System.Drawing.Size(143, 55);
-            this.buttonDrinkAdd.TabIndex = 6;
-            this.buttonDrinkAdd.Text = "Add";
-            this.buttonDrinkAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonDrinkAdd.Textcolor = System.Drawing.Color.White;
-            this.buttonDrinkAdd.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkAdd.Click += new System.EventHandler(this.buttonDrinkAdd_Click);
-            // 
-            // buttonDrinkDelete
-            // 
-            this.buttonDrinkDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonDrinkDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDrinkDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDrinkDelete.BorderRadius = 0;
-            this.buttonDrinkDelete.ButtonText = "Delete";
-            this.buttonDrinkDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDrinkDelete.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonDrinkDelete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonDrinkDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkDelete.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonDrinkDelete.Iconimage = null;
-            this.buttonDrinkDelete.Iconimage_right = null;
-            this.buttonDrinkDelete.Iconimage_right_Selected = null;
-            this.buttonDrinkDelete.Iconimage_Selected = null;
-            this.buttonDrinkDelete.IconMarginLeft = 0;
-            this.buttonDrinkDelete.IconMarginRight = 0;
-            this.buttonDrinkDelete.IconRightVisible = true;
-            this.buttonDrinkDelete.IconRightZoom = 0D;
-            this.buttonDrinkDelete.IconVisible = false;
-            this.buttonDrinkDelete.IconZoom = 90D;
-            this.buttonDrinkDelete.IsTab = false;
-            this.buttonDrinkDelete.Location = new System.Drawing.Point(0, 0);
-            this.buttonDrinkDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.buttonDrinkDelete.Name = "buttonDrinkDelete";
-            this.buttonDrinkDelete.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkDelete.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonDrinkDelete.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonDrinkDelete.selected = false;
-            this.buttonDrinkDelete.Size = new System.Drawing.Size(142, 55);
-            this.buttonDrinkDelete.TabIndex = 7;
-            this.buttonDrinkDelete.Text = "Delete";
-            this.buttonDrinkDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonDrinkDelete.Textcolor = System.Drawing.Color.White;
-            this.buttonDrinkDelete.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // buttonDrinkEdit
-            // 
-            this.buttonDrinkEdit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonDrinkEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDrinkEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDrinkEdit.BorderRadius = 0;
-            this.buttonDrinkEdit.ButtonText = "Edit";
-            this.buttonDrinkEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDrinkEdit.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonDrinkEdit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonDrinkEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkEdit.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonDrinkEdit.Iconimage = null;
-            this.buttonDrinkEdit.Iconimage_right = null;
-            this.buttonDrinkEdit.Iconimage_right_Selected = null;
-            this.buttonDrinkEdit.Iconimage_Selected = null;
-            this.buttonDrinkEdit.IconMarginLeft = 0;
-            this.buttonDrinkEdit.IconMarginRight = 0;
-            this.buttonDrinkEdit.IconRightVisible = true;
-            this.buttonDrinkEdit.IconRightZoom = 0D;
-            this.buttonDrinkEdit.IconVisible = false;
-            this.buttonDrinkEdit.IconZoom = 90D;
-            this.buttonDrinkEdit.IsTab = false;
-            this.buttonDrinkEdit.Location = new System.Drawing.Point(252, 0);
-            this.buttonDrinkEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.buttonDrinkEdit.Name = "buttonDrinkEdit";
-            this.buttonDrinkEdit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkEdit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonDrinkEdit.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonDrinkEdit.selected = false;
-            this.buttonDrinkEdit.Size = new System.Drawing.Size(133, 55);
-            this.buttonDrinkEdit.TabIndex = 8;
-            this.buttonDrinkEdit.Text = "Edit";
-            this.buttonDrinkEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonDrinkEdit.Textcolor = System.Drawing.Color.White;
-            this.buttonDrinkEdit.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkEdit.Click += new System.EventHandler(this.buttonDrinkEdit_Click);
+            this.panelMainDrinkRight.Controls.Add(this.numericUpDownPrice);
+            this.panelMainDrinkRight.Controls.Add(this.comboBoxDrinkCategory);
+            this.panelMainDrinkRight.Controls.Add(this.label4);
+            this.panelMainDrinkRight.Controls.Add(this.label3);
+            this.panelMainDrinkRight.Controls.Add(this.label2);
+            this.panelMainDrinkRight.Controls.Add(this.label1);
+            this.panelMainDrinkRight.Controls.Add(this.txtDrinkname);
+            this.panelMainDrinkRight.Controls.Add(this.txtDrinkID);
+            this.panelMainDrinkRight.Controls.Add(this.panelTopRight);
+            this.panelMainDrinkRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelMainDrinkRight.Location = new System.Drawing.Point(528, 0);
+            this.panelMainDrinkRight.Name = "panelMainDrinkRight";
+            this.panelMainDrinkRight.Size = new System.Drawing.Size(539, 655);
+            this.panelMainDrinkRight.TabIndex = 1;
             // 
             // panelTopRight
             // 
@@ -455,58 +197,6 @@
             this.panelTopRight.TabIndex = 9;
             this.panelTopRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // panelTopLeft
-            // 
-            this.panelTopLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panelTopLeft.Controls.Add(this.buttonDrinkView);
-            this.panelTopLeft.Controls.Add(this.buttonDrinkEdit);
-            this.panelTopLeft.Controls.Add(this.buttonDrinkAdd);
-            this.panelTopLeft.Controls.Add(this.buttonDrinkDelete);
-            this.panelTopLeft.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelTopLeft.Name = "panelTopLeft";
-            this.panelTopLeft.Size = new System.Drawing.Size(528, 55);
-            this.panelTopLeft.TabIndex = 9;
-            // 
-            // buttonDrinkView
-            // 
-            this.buttonDrinkView.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonDrinkView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDrinkView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDrinkView.BorderRadius = 0;
-            this.buttonDrinkView.ButtonText = "View";
-            this.buttonDrinkView.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDrinkView.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonDrinkView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonDrinkView.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkView.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonDrinkView.Iconimage = null;
-            this.buttonDrinkView.Iconimage_right = null;
-            this.buttonDrinkView.Iconimage_right_Selected = null;
-            this.buttonDrinkView.Iconimage_Selected = null;
-            this.buttonDrinkView.IconMarginLeft = 0;
-            this.buttonDrinkView.IconMarginRight = 0;
-            this.buttonDrinkView.IconRightVisible = true;
-            this.buttonDrinkView.IconRightZoom = 0D;
-            this.buttonDrinkView.IconVisible = false;
-            this.buttonDrinkView.IconZoom = 90D;
-            this.buttonDrinkView.IsTab = false;
-            this.buttonDrinkView.Location = new System.Drawing.Point(142, 0);
-            this.buttonDrinkView.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonDrinkView.Name = "buttonDrinkView";
-            this.buttonDrinkView.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkView.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonDrinkView.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonDrinkView.selected = false;
-            this.buttonDrinkView.Size = new System.Drawing.Size(110, 55);
-            this.buttonDrinkView.TabIndex = 9;
-            this.buttonDrinkView.Text = "View";
-            this.buttonDrinkView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonDrinkView.Textcolor = System.Drawing.Color.White;
-            this.buttonDrinkView.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkView.Click += new System.EventHandler(this.buttonDrinkView_Click);
-            // 
             // txtSearchDrinkName
             // 
             this.txtSearchDrinkName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
@@ -515,13 +205,14 @@
             this.txtSearchDrinkName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
             this.txtSearchDrinkName.BorderThickness = 1;
             this.txtSearchDrinkName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchDrinkName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearchDrinkName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSearchDrinkName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchDrinkName.ForeColor = System.Drawing.Color.White;
             this.txtSearchDrinkName.isPassword = false;
-            this.txtSearchDrinkName.Location = new System.Drawing.Point(10, 9);
+            this.txtSearchDrinkName.Location = new System.Drawing.Point(0, 0);
             this.txtSearchDrinkName.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchDrinkName.Name = "txtSearchDrinkName";
-            this.txtSearchDrinkName.Size = new System.Drawing.Size(416, 36);
+            this.txtSearchDrinkName.Size = new System.Drawing.Size(539, 55);
             this.txtSearchDrinkName.TabIndex = 3;
             this.txtSearchDrinkName.Text = "Search drink here...";
             this.txtSearchDrinkName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -544,7 +235,7 @@
             this.buttonDrinkSearch.Iconimage_Selected = null;
             this.buttonDrinkSearch.IconMarginLeft = 0;
             this.buttonDrinkSearch.IconMarginRight = 0;
-            this.buttonDrinkSearch.IconRightVisible = true;
+            this.buttonDrinkSearch.IconRightVisible = false;
             this.buttonDrinkSearch.IconRightZoom = 0D;
             this.buttonDrinkSearch.IconVisible = false;
             this.buttonDrinkSearch.IconZoom = 90D;
@@ -562,23 +253,6 @@
             this.buttonDrinkSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonDrinkSearch.Textcolor = System.Drawing.Color.White;
             this.buttonDrinkSearch.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // panelMainDrinkRight
-            // 
-            this.panelMainDrinkRight.Controls.Add(this.numericUpDownPrice);
-            this.panelMainDrinkRight.Controls.Add(this.comboBoxDrinkCategory);
-            this.panelMainDrinkRight.Controls.Add(this.label4);
-            this.panelMainDrinkRight.Controls.Add(this.label3);
-            this.panelMainDrinkRight.Controls.Add(this.label2);
-            this.panelMainDrinkRight.Controls.Add(this.label1);
-            this.panelMainDrinkRight.Controls.Add(this.txtDrinkname);
-            this.panelMainDrinkRight.Controls.Add(this.txtDrinkID);
-            this.panelMainDrinkRight.Controls.Add(this.panelTopRight);
-            this.panelMainDrinkRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelMainDrinkRight.Location = new System.Drawing.Point(528, 0);
-            this.panelMainDrinkRight.Name = "panelMainDrinkRight";
-            this.panelMainDrinkRight.Size = new System.Drawing.Size(539, 655);
-            this.panelMainDrinkRight.TabIndex = 1;
             // 
             // txtDrinkID
             // 
@@ -599,6 +273,25 @@
             this.txtDrinkID.Text = "Search drink here...";
             this.txtDrinkID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDrinkID.OnValueChanged += new System.EventHandler(this.txtDrinkID_OnValueChanged);
+            // 
+            // txtDrinkname
+            // 
+            this.txtDrinkname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderThickness = 1;
+            this.txtDrinkname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDrinkname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDrinkname.ForeColor = System.Drawing.Color.White;
+            this.txtDrinkname.isPassword = false;
+            this.txtDrinkname.Location = new System.Drawing.Point(165, 173);
+            this.txtDrinkname.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDrinkname.Name = "txtDrinkname";
+            this.txtDrinkname.Size = new System.Drawing.Size(370, 36);
+            this.txtDrinkname.TabIndex = 12;
+            this.txtDrinkname.Text = "Search drink here...";
+            this.txtDrinkname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -621,25 +314,6 @@
             this.label2.Size = new System.Drawing.Size(119, 22);
             this.label2.TabIndex = 13;
             this.label2.Text = "Drink name:";
-            // 
-            // txtDrinkname
-            // 
-            this.txtDrinkname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderThickness = 1;
-            this.txtDrinkname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDrinkname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDrinkname.ForeColor = System.Drawing.Color.White;
-            this.txtDrinkname.isPassword = false;
-            this.txtDrinkname.Location = new System.Drawing.Point(165, 173);
-            this.txtDrinkname.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDrinkname.Name = "txtDrinkname";
-            this.txtDrinkname.Size = new System.Drawing.Size(370, 36);
-            this.txtDrinkname.TabIndex = 12;
-            this.txtDrinkname.Text = "Search drink here...";
-            this.txtDrinkname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -681,9 +355,340 @@
             this.numericUpDownPrice.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownPrice.ForeColor = System.Drawing.Color.White;
             this.numericUpDownPrice.Location = new System.Drawing.Point(165, 335);
+            this.numericUpDownPrice.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.numericUpDownPrice.Name = "numericUpDownPrice";
             this.numericUpDownPrice.Size = new System.Drawing.Size(370, 31);
             this.numericUpDownPrice.TabIndex = 18;
+            this.numericUpDownPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panelTopLeft
+            // 
+            this.panelTopLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panelTopLeft.Controls.Add(this.buttonDrinkDelete);
+            this.panelTopLeft.Controls.Add(this.buttonDrinkView);
+            this.panelTopLeft.Controls.Add(this.buttonDrinkAdd);
+            this.panelTopLeft.Controls.Add(this.buttonDrinkEdit);
+            this.panelTopLeft.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelTopLeft.Name = "panelTopLeft";
+            this.panelTopLeft.Size = new System.Drawing.Size(528, 55);
+            this.panelTopLeft.TabIndex = 9;
+            // 
+            // buttonDrinkDelete
+            // 
+            this.buttonDrinkDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonDrinkDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonDrinkDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDrinkDelete.BorderRadius = 0;
+            this.buttonDrinkDelete.ButtonText = "Delete";
+            this.buttonDrinkDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDrinkDelete.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDrinkDelete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonDrinkDelete.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkDelete.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDrinkDelete.Iconimage = null;
+            this.buttonDrinkDelete.Iconimage_right = null;
+            this.buttonDrinkDelete.Iconimage_right_Selected = null;
+            this.buttonDrinkDelete.Iconimage_Selected = null;
+            this.buttonDrinkDelete.IconMarginLeft = 0;
+            this.buttonDrinkDelete.IconMarginRight = 0;
+            this.buttonDrinkDelete.IconRightVisible = false;
+            this.buttonDrinkDelete.IconRightZoom = 0D;
+            this.buttonDrinkDelete.IconVisible = false;
+            this.buttonDrinkDelete.IconZoom = 90D;
+            this.buttonDrinkDelete.IsTab = false;
+            this.buttonDrinkDelete.Location = new System.Drawing.Point(211, 0);
+            this.buttonDrinkDelete.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonDrinkDelete.Name = "buttonDrinkDelete";
+            this.buttonDrinkDelete.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkDelete.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonDrinkDelete.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDrinkDelete.selected = false;
+            this.buttonDrinkDelete.Size = new System.Drawing.Size(236, 55);
+            this.buttonDrinkDelete.TabIndex = 7;
+            this.buttonDrinkDelete.Text = "Delete";
+            this.buttonDrinkDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDrinkDelete.Textcolor = System.Drawing.Color.White;
+            this.buttonDrinkDelete.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // buttonDrinkAdd
+            // 
+            this.buttonDrinkAdd.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonDrinkAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonDrinkAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDrinkAdd.BorderRadius = 0;
+            this.buttonDrinkAdd.ButtonText = "Add";
+            this.buttonDrinkAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDrinkAdd.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDrinkAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonDrinkAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkAdd.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDrinkAdd.Iconimage = null;
+            this.buttonDrinkAdd.Iconimage_right = null;
+            this.buttonDrinkAdd.Iconimage_right_Selected = null;
+            this.buttonDrinkAdd.Iconimage_Selected = null;
+            this.buttonDrinkAdd.IconMarginLeft = 0;
+            this.buttonDrinkAdd.IconMarginRight = 0;
+            this.buttonDrinkAdd.IconRightVisible = false;
+            this.buttonDrinkAdd.IconRightZoom = 0D;
+            this.buttonDrinkAdd.IconVisible = false;
+            this.buttonDrinkAdd.IconZoom = 90D;
+            this.buttonDrinkAdd.IsTab = false;
+            this.buttonDrinkAdd.Location = new System.Drawing.Point(101, 0);
+            this.buttonDrinkAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDrinkAdd.Name = "buttonDrinkAdd";
+            this.buttonDrinkAdd.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkAdd.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonDrinkAdd.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDrinkAdd.selected = false;
+            this.buttonDrinkAdd.Size = new System.Drawing.Size(110, 55);
+            this.buttonDrinkAdd.TabIndex = 6;
+            this.buttonDrinkAdd.Text = "Add";
+            this.buttonDrinkAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDrinkAdd.Textcolor = System.Drawing.Color.White;
+            this.buttonDrinkAdd.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkAdd.Click += new System.EventHandler(this.buttonDrinkAdd_Click);
+            // 
+            // buttonDrinkEdit
+            // 
+            this.buttonDrinkEdit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonDrinkEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonDrinkEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDrinkEdit.BorderRadius = 0;
+            this.buttonDrinkEdit.ButtonText = "Edit";
+            this.buttonDrinkEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDrinkEdit.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDrinkEdit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonDrinkEdit.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkEdit.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDrinkEdit.Iconimage = null;
+            this.buttonDrinkEdit.Iconimage_right = null;
+            this.buttonDrinkEdit.Iconimage_right_Selected = null;
+            this.buttonDrinkEdit.Iconimage_Selected = null;
+            this.buttonDrinkEdit.IconMarginLeft = 0;
+            this.buttonDrinkEdit.IconMarginRight = 0;
+            this.buttonDrinkEdit.IconRightVisible = false;
+            this.buttonDrinkEdit.IconRightZoom = 0D;
+            this.buttonDrinkEdit.IconVisible = false;
+            this.buttonDrinkEdit.IconZoom = 90D;
+            this.buttonDrinkEdit.IsTab = false;
+            this.buttonDrinkEdit.Location = new System.Drawing.Point(0, 0);
+            this.buttonDrinkEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.buttonDrinkEdit.Name = "buttonDrinkEdit";
+            this.buttonDrinkEdit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkEdit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonDrinkEdit.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDrinkEdit.selected = false;
+            this.buttonDrinkEdit.Size = new System.Drawing.Size(101, 55);
+            this.buttonDrinkEdit.TabIndex = 8;
+            this.buttonDrinkEdit.Text = "Edit";
+            this.buttonDrinkEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDrinkEdit.Textcolor = System.Drawing.Color.White;
+            this.buttonDrinkEdit.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkEdit.Click += new System.EventHandler(this.buttonDrinkEdit_Click);
+            // 
+            // buttonDrinkView
+            // 
+            this.buttonDrinkView.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonDrinkView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonDrinkView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDrinkView.BorderRadius = 0;
+            this.buttonDrinkView.ButtonText = "View";
+            this.buttonDrinkView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDrinkView.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDrinkView.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonDrinkView.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkView.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDrinkView.Iconimage = null;
+            this.buttonDrinkView.Iconimage_right = null;
+            this.buttonDrinkView.Iconimage_right_Selected = null;
+            this.buttonDrinkView.Iconimage_Selected = null;
+            this.buttonDrinkView.IconMarginLeft = 0;
+            this.buttonDrinkView.IconMarginRight = 0;
+            this.buttonDrinkView.IconRightVisible = false;
+            this.buttonDrinkView.IconRightZoom = 0D;
+            this.buttonDrinkView.IconVisible = false;
+            this.buttonDrinkView.IconZoom = 90D;
+            this.buttonDrinkView.IsTab = false;
+            this.buttonDrinkView.Location = new System.Drawing.Point(447, 0);
+            this.buttonDrinkView.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonDrinkView.Name = "buttonDrinkView";
+            this.buttonDrinkView.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkView.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonDrinkView.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDrinkView.selected = false;
+            this.buttonDrinkView.Size = new System.Drawing.Size(81, 55);
+            this.buttonDrinkView.TabIndex = 9;
+            this.buttonDrinkView.Text = "View";
+            this.buttonDrinkView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDrinkView.Textcolor = System.Drawing.Color.White;
+            this.buttonDrinkView.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkView.Click += new System.EventHandler(this.buttonDrinkView_Click);
+            // 
+            // tbRevenue
+            // 
+            this.tbRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.tbRevenue.Controls.Add(this.panelFill);
+            this.tbRevenue.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRevenue.ForeColor = System.Drawing.Color.White;
+            this.tbRevenue.HorizontalScrollbarBarColor = true;
+            this.tbRevenue.HorizontalScrollbarHighlightOnWheel = false;
+            this.tbRevenue.HorizontalScrollbarSize = 10;
+            this.tbRevenue.Location = new System.Drawing.Point(4, 38);
+            this.tbRevenue.Name = "tbRevenue";
+            this.tbRevenue.Size = new System.Drawing.Size(1067, 655);
+            this.tbRevenue.TabIndex = 0;
+            this.tbRevenue.Text = "Revenue";
+            this.tbRevenue.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.tbRevenue.VerticalScrollbarBarColor = true;
+            this.tbRevenue.VerticalScrollbarHighlightOnWheel = false;
+            this.tbRevenue.VerticalScrollbarSize = 10;
+            // 
+            // panelFill
+            // 
+            this.panelFill.Controls.Add(this.panelHeader);
+            this.panelFill.Controls.Add(this.bunifuCustomDataGrid1);
+            this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFill.Location = new System.Drawing.Point(0, 0);
+            this.panelFill.Name = "panelFill";
+            this.panelFill.Size = new System.Drawing.Size(1067, 655);
+            this.panelFill.TabIndex = 2;
+            // 
+            // bunifuCustomDataGrid1
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1067, 655);
+            this.bunifuCustomDataGrid1.TabIndex = 0;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.Controls.Add(this.buttonStatistics);
+            this.panelHeader.Controls.Add(this.bunifuDatepicker2);
+            this.panelHeader.Controls.Add(this.bunifuDatepicker1);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1067, 55);
+            this.panelHeader.TabIndex = 3;
+            // 
+            // bunifuDatepicker1
+            // 
+            this.bunifuDatepicker1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = "";
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 55);
+            this.bunifuDatepicker1.TabIndex = 0;
+            this.bunifuDatepicker1.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
+            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
+            // 
+            // bunifuDatepicker2
+            // 
+            this.bunifuDatepicker2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bunifuDatepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.bunifuDatepicker2.BorderRadius = 0;
+            this.bunifuDatepicker2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker2.FormatCustom = "";
+            this.bunifuDatepicker2.Location = new System.Drawing.Point(764, 0);
+            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
+            this.bunifuDatepicker2.Size = new System.Drawing.Size(303, 55);
+            this.bunifuDatepicker2.TabIndex = 1;
+            this.bunifuDatepicker2.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
+            // 
+            // buttonStatistics
+            // 
+            this.buttonStatistics.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonStatistics.BorderRadius = 0;
+            this.buttonStatistics.ButtonText = "Statistics";
+            this.buttonStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonStatistics.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonStatistics.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonStatistics.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonStatistics.Iconimage = null;
+            this.buttonStatistics.Iconimage_right = null;
+            this.buttonStatistics.Iconimage_right_Selected = null;
+            this.buttonStatistics.Iconimage_Selected = null;
+            this.buttonStatistics.IconMarginLeft = 0;
+            this.buttonStatistics.IconMarginRight = 0;
+            this.buttonStatistics.IconRightVisible = false;
+            this.buttonStatistics.IconRightZoom = 0D;
+            this.buttonStatistics.IconVisible = false;
+            this.buttonStatistics.IconZoom = 90D;
+            this.buttonStatistics.IsTab = false;
+            this.buttonStatistics.Location = new System.Drawing.Point(303, 0);
+            this.buttonStatistics.Name = "buttonStatistics";
+            this.buttonStatistics.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonStatistics.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonStatistics.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonStatistics.selected = false;
+            this.buttonStatistics.Size = new System.Drawing.Size(461, 55);
+            this.buttonStatistics.TabIndex = 4;
+            this.buttonStatistics.Text = "Statistics";
+            this.buttonStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonStatistics.Textcolor = System.Drawing.Color.White;
+            this.buttonStatistics.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // tabControlAdmin
+            // 
+            this.tabControlAdmin.Controls.Add(this.tbRevenue);
+            this.tabControlAdmin.Controls.Add(this.tbDrink);
+            this.tabControlAdmin.Controls.Add(this.tbRoom);
+            this.tabControlAdmin.Controls.Add(this.tbAccount);
+            this.tabControlAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlAdmin.Location = new System.Drawing.Point(0, 0);
+            this.tabControlAdmin.Name = "tabControlAdmin";
+            this.tabControlAdmin.SelectedIndex = 1;
+            this.tabControlAdmin.Size = new System.Drawing.Size(1075, 697);
+            this.tabControlAdmin.TabIndex = 0;
+            this.tabControlAdmin.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.tabControlAdmin.UseSelectable = true;
+            // 
+            // panelMainDrinkLeft
+            // 
+            this.panelMainDrinkLeft.Controls.Add(this.dgvDrink);
+            this.panelMainDrinkLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainDrinkLeft.Location = new System.Drawing.Point(0, 55);
+            this.panelMainDrinkLeft.Name = "panelMainDrinkLeft";
+            this.panelMainDrinkLeft.Size = new System.Drawing.Size(528, 600);
+            this.panelMainDrinkLeft.TabIndex = 10;
             // 
             // Admin
             // 
@@ -696,18 +701,19 @@
             this.Size = new System.Drawing.Size(1075, 697);
             this.Load += new System.EventHandler(this.admin_Load);
             this.tbDrink.ResumeLayout(false);
-            this.tbRevenue.ResumeLayout(false);
-            this.tabControlAdmin.ResumeLayout(false);
-            this.panelHeader.ResumeLayout(false);
-            this.panelFill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            this.panelMainDrinkLeft.ResumeLayout(false);
+            this.panelMainDrink.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrink)).EndInit();
-            this.panelTopRight.ResumeLayout(false);
-            this.panelTopLeft.ResumeLayout(false);
             this.panelMainDrinkRight.ResumeLayout(false);
             this.panelMainDrinkRight.PerformLayout();
+            this.panelTopRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).EndInit();
+            this.panelTopLeft.ResumeLayout(false);
+            this.tbRevenue.ResumeLayout(false);
+            this.panelFill.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            this.panelHeader.ResumeLayout(false);
+            this.tabControlAdmin.ResumeLayout(false);
+            this.panelMainDrinkLeft.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -716,34 +722,34 @@
 
         private MetroFramework.Controls.MetroTabPage tbAccount;
         private MetroFramework.Controls.MetroTabPage tbRoom;
-        private MetroFramework.Controls.MetroTabPage tbCategory;
         private MetroFramework.Controls.MetroTabPage tbDrink;
-        private MetroFramework.Controls.MetroTabPage tbRevenue;
-        private System.Windows.Forms.Panel panelFill;
-        private System.Windows.Forms.Panel panelHeader;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private MetroFramework.Controls.MetroTabControl tabControlAdmin;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonStatistics;
-        private System.Windows.Forms.Panel panelMainDrinkLeft;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvDrink;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkAdd;
-        private System.Windows.Forms.Panel panelTopRight;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkDelete;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkEdit;
+        private System.Windows.Forms.Panel panelMainDrink;
         private System.Windows.Forms.Panel panelTopLeft;
         private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkView;
-        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkSearch;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtSearchDrinkName;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkEdit;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkAdd;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkDelete;
         private System.Windows.Forms.Panel panelMainDrinkRight;
+        private System.Windows.Forms.NumericUpDown numericUpDownPrice;
+        private System.Windows.Forms.ComboBox comboBoxDrinkCategory;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtDrinkname;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtDrinkID;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBoxDrinkCategory;
-        private System.Windows.Forms.NumericUpDown numericUpDownPrice;
+        private System.Windows.Forms.Panel panelTopRight;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonDrinkSearch;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtSearchDrinkName;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvDrink;
+        private MetroFramework.Controls.MetroTabPage tbRevenue;
+        private System.Windows.Forms.Panel panelFill;
+        private System.Windows.Forms.Panel panelHeader;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonStatistics;
+        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
+        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private MetroFramework.Controls.MetroTabControl tabControlAdmin;
+        private System.Windows.Forms.Panel panelMainDrinkLeft;
     }
 }
