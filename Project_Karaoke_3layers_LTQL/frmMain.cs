@@ -10,23 +10,15 @@ namespace Project_Karaoke_3layers_LTQL
 {
     public partial class FrmMain : Form
     {
-        public FrmMain()
-        {
-            InitializeComponent();
-            
-        }
-        Admin ucAdmin = new Admin();
-        BookRoom ucBookRoom = new BookRoom();
-        ChangeRoom uChangeRoom = new ChangeRoom();
-        OfferDrink ucOfferDrink = new OfferDrink();
-        Pay ucPay = new Pay();
+        public FrmMain() => InitializeComponent();
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             SoundPlayer audio = new SoundPlayer(Resources.nicoNicoNi);
             audio.Play();
             Form fLoginAlert = new FrmLoginAlert();
             fLoginAlert.ShowDialog();        
-            buttonAdmin.selected = true;
+            //buttonAdmin.selected = true;
             buttonShow.Visible = false;
         }
 
@@ -85,7 +77,6 @@ namespace Project_Karaoke_3layers_LTQL
         }
 
        
-
         private void buttonMinimize_Click(object sender, EventArgs e)
         {
             SoundPlayer audio = new SoundPlayer(Resources.Minimize);
@@ -102,7 +93,6 @@ namespace Project_Karaoke_3layers_LTQL
         }
 
      
-
         private void FrmMain_Resize(object sender, EventArgs e)
         {
             // Ẩn form xuống tray icon
@@ -135,11 +125,6 @@ namespace Project_Karaoke_3layers_LTQL
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e) => Close();
 
-        private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void buttonAdmin_Click(object sender, EventArgs e)
         {
             if (!panelMain.Controls.Contains(Admin.Instance))
@@ -152,11 +137,6 @@ namespace Project_Karaoke_3layers_LTQL
             {
                 Admin.Instance.BringToFront();
             }
-        }
-
-        private void buttonBookRoom_Click(object sender, EventArgs e)
-        {
-         
         }
 
         private void buttonChangeRoom_Click(object sender, EventArgs e)
@@ -192,8 +172,8 @@ namespace Project_Karaoke_3layers_LTQL
             if (!panelMain.Controls.Contains(OfferDrink.Instance))
             {
                 panelMain.Controls.Add(OfferDrink.Instance);
-                Admin.Instance.Dock = DockStyle.Fill;
-                Admin.Instance.BringToFront();
+                OfferDrink.Instance.Dock = DockStyle.Fill;
+                OfferDrink.Instance.BringToFront();
             }
             else
             {
