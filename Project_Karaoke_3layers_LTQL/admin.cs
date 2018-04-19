@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Project_Karaoke_3layers_LTQL.DAO;
 
 namespace Project_Karaoke_3layers_LTQL
 {
@@ -27,7 +29,15 @@ namespace Project_Karaoke_3layers_LTQL
 
         private void admin_Load(object sender, EventArgs e)
         {
+            LoadAccountList();
+        }
 
+        void LoadAccountList()
+        {
+            string query = "EXEC dbo.USP_GetListAccountByUserName @userName";// phải cách ra để k lỗi
+            
+            DataProvider provider =new DataProvider();
+            dgvDrink.DataSource = provider.ExecuteQuery(query,new object[]{"neet"});
         }
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
@@ -76,6 +86,11 @@ namespace Project_Karaoke_3layers_LTQL
         }
 
         private void panelMainRevenue_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvDrink_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

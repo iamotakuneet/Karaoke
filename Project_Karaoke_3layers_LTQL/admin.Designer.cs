@@ -36,48 +36,48 @@
             this.tbRoom = new MetroFramework.Controls.MetroTabPage();
             this.tbDrink = new MetroFramework.Controls.MetroTabPage();
             this.panelMainDrink = new System.Windows.Forms.Panel();
+            this.panelMainDrinkLeft = new System.Windows.Forms.Panel();
             this.dgvDrink = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panelMainDrinkRight = new System.Windows.Forms.Panel();
-            this.panelTopRight = new System.Windows.Forms.Panel();
-            this.txtSearchDrinkName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.buttonDrinkSearch = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txtDrinkID = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDrinkname = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxDrinkCategory = new System.Windows.Forms.ComboBox();
-            this.numericUpDownPrice = new System.Windows.Forms.NumericUpDown();
             this.panelTopLeft = new System.Windows.Forms.Panel();
             this.buttonDrinkDelete = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonDrinkView = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonDrinkAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonDrinkEdit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.buttonDrinkView = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panelMainDrinkRight = new System.Windows.Forms.Panel();
+            this.numericUpDownPrice = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxDrinkCategory = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDrinkname = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDrinkID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panelTopRight = new System.Windows.Forms.Panel();
+            this.buttonDrinkSearch = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtSearchDrinkName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.tbRevenue = new MetroFramework.Controls.MetroTabPage();
             this.panelMainRevenue = new System.Windows.Forms.Panel();
+            this.paneldgv = new System.Windows.Forms.Panel();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.buttonStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.buttonStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabControlAdmin = new MetroFramework.Controls.MetroTabControl();
-            this.panelMainDrinkLeft = new System.Windows.Forms.Panel();
-            this.paneldgv = new System.Windows.Forms.Panel();
             this.tbDrink.SuspendLayout();
             this.panelMainDrink.SuspendLayout();
+            this.panelMainDrinkLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrink)).BeginInit();
-            this.panelMainDrinkRight.SuspendLayout();
-            this.panelTopRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
             this.panelTopLeft.SuspendLayout();
+            this.panelMainDrinkRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
+            this.panelTopRight.SuspendLayout();
             this.tbRevenue.SuspendLayout();
             this.panelMainRevenue.SuspendLayout();
+            this.paneldgv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panelHeader.SuspendLayout();
             this.tabControlAdmin.SuspendLayout();
-            this.panelMainDrinkLeft.SuspendLayout();
-            this.paneldgv.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbAccount
@@ -143,6 +143,16 @@
             this.panelMainDrink.Size = new System.Drawing.Size(1067, 655);
             this.panelMainDrink.TabIndex = 3;
             // 
+            // panelMainDrinkLeft
+            // 
+            this.panelMainDrinkLeft.Controls.Add(this.dgvDrink);
+            this.panelMainDrinkLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainDrinkLeft.ForeColor = System.Drawing.Color.Black;
+            this.panelMainDrinkLeft.Location = new System.Drawing.Point(0, 55);
+            this.panelMainDrinkLeft.Name = "panelMainDrinkLeft";
+            this.panelMainDrinkLeft.Size = new System.Drawing.Size(528, 600);
+            this.panelMainDrinkLeft.TabIndex = 10;
+            // 
             // dgvDrink
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -151,9 +161,9 @@
             this.dgvDrink.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDrink.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -162,210 +172,15 @@
             this.dgvDrink.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDrink.DoubleBuffered = true;
             this.dgvDrink.EnableHeadersVisualStyles = false;
-            this.dgvDrink.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvDrink.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvDrink.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.dgvDrink.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
+            this.dgvDrink.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
             this.dgvDrink.Location = new System.Drawing.Point(0, 0);
             this.dgvDrink.Name = "dgvDrink";
             this.dgvDrink.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvDrink.Size = new System.Drawing.Size(528, 600);
             this.dgvDrink.TabIndex = 0;
-            // 
-            // panelMainDrinkRight
-            // 
-            this.panelMainDrinkRight.Controls.Add(this.numericUpDownPrice);
-            this.panelMainDrinkRight.Controls.Add(this.comboBoxDrinkCategory);
-            this.panelMainDrinkRight.Controls.Add(this.label4);
-            this.panelMainDrinkRight.Controls.Add(this.label3);
-            this.panelMainDrinkRight.Controls.Add(this.label2);
-            this.panelMainDrinkRight.Controls.Add(this.label1);
-            this.panelMainDrinkRight.Controls.Add(this.txtDrinkname);
-            this.panelMainDrinkRight.Controls.Add(this.txtDrinkID);
-            this.panelMainDrinkRight.Controls.Add(this.panelTopRight);
-            this.panelMainDrinkRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelMainDrinkRight.Location = new System.Drawing.Point(528, 0);
-            this.panelMainDrinkRight.Name = "panelMainDrinkRight";
-            this.panelMainDrinkRight.Size = new System.Drawing.Size(539, 655);
-            this.panelMainDrinkRight.TabIndex = 1;
-            // 
-            // panelTopRight
-            // 
-            this.panelTopRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panelTopRight.Controls.Add(this.buttonDrinkSearch);
-            this.panelTopRight.Controls.Add(this.txtSearchDrinkName);
-            this.panelTopRight.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopRight.Location = new System.Drawing.Point(0, 0);
-            this.panelTopRight.Name = "panelTopRight";
-            this.panelTopRight.Size = new System.Drawing.Size(539, 55);
-            this.panelTopRight.TabIndex = 9;
-            this.panelTopRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // txtSearchDrinkName
-            // 
-            this.txtSearchDrinkName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrinkName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrinkName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrinkName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrinkName.BorderThickness = 1;
-            this.txtSearchDrinkName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchDrinkName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSearchDrinkName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchDrinkName.ForeColor = System.Drawing.Color.White;
-            this.txtSearchDrinkName.isPassword = false;
-            this.txtSearchDrinkName.Location = new System.Drawing.Point(0, 0);
-            this.txtSearchDrinkName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearchDrinkName.Name = "txtSearchDrinkName";
-            this.txtSearchDrinkName.Size = new System.Drawing.Size(539, 55);
-            this.txtSearchDrinkName.TabIndex = 3;
-            this.txtSearchDrinkName.Text = "Search drink here...";
-            this.txtSearchDrinkName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonDrinkSearch
-            // 
-            this.buttonDrinkSearch.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonDrinkSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDrinkSearch.BorderRadius = 0;
-            this.buttonDrinkSearch.ButtonText = "Search";
-            this.buttonDrinkSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDrinkSearch.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonDrinkSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonDrinkSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkSearch.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonDrinkSearch.Iconimage = null;
-            this.buttonDrinkSearch.Iconimage_right = null;
-            this.buttonDrinkSearch.Iconimage_right_Selected = null;
-            this.buttonDrinkSearch.Iconimage_Selected = null;
-            this.buttonDrinkSearch.IconMarginLeft = 0;
-            this.buttonDrinkSearch.IconMarginRight = 0;
-            this.buttonDrinkSearch.IconRightVisible = false;
-            this.buttonDrinkSearch.IconRightZoom = 0D;
-            this.buttonDrinkSearch.IconVisible = false;
-            this.buttonDrinkSearch.IconZoom = 90D;
-            this.buttonDrinkSearch.IsTab = false;
-            this.buttonDrinkSearch.Location = new System.Drawing.Point(439, 0);
-            this.buttonDrinkSearch.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.buttonDrinkSearch.Name = "buttonDrinkSearch";
-            this.buttonDrinkSearch.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkSearch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonDrinkSearch.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonDrinkSearch.selected = false;
-            this.buttonDrinkSearch.Size = new System.Drawing.Size(100, 55);
-            this.buttonDrinkSearch.TabIndex = 9;
-            this.buttonDrinkSearch.Text = "Search";
-            this.buttonDrinkSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonDrinkSearch.Textcolor = System.Drawing.Color.White;
-            this.buttonDrinkSearch.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtDrinkID
-            // 
-            this.txtDrinkID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkID.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkID.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkID.BorderThickness = 1;
-            this.txtDrinkID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDrinkID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDrinkID.ForeColor = System.Drawing.Color.White;
-            this.txtDrinkID.isPassword = false;
-            this.txtDrinkID.Location = new System.Drawing.Point(165, 92);
-            this.txtDrinkID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDrinkID.Name = "txtDrinkID";
-            this.txtDrinkID.Size = new System.Drawing.Size(370, 36);
-            this.txtDrinkID.TabIndex = 10;
-            this.txtDrinkID.Text = "Search drink here...";
-            this.txtDrinkID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDrinkID.OnValueChanged += new System.EventHandler(this.txtDrinkID_OnValueChanged);
-            // 
-            // txtDrinkname
-            // 
-            this.txtDrinkname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtDrinkname.BorderThickness = 1;
-            this.txtDrinkname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDrinkname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDrinkname.ForeColor = System.Drawing.Color.White;
-            this.txtDrinkname.isPassword = false;
-            this.txtDrinkname.Location = new System.Drawing.Point(165, 173);
-            this.txtDrinkname.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDrinkname.Name = "txtDrinkname";
-            this.txtDrinkname.Size = new System.Drawing.Size(370, 36);
-            this.txtDrinkname.TabIndex = 12;
-            this.txtDrinkname.Text = "Search drink here...";
-            this.txtDrinkname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 22);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "ID:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 22);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Drink name:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(6, 258);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 22);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Category:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(6, 339);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 22);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Price:";
-            // 
-            // comboBoxDrinkCategory
-            // 
-            this.comboBoxDrinkCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.comboBoxDrinkCategory.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDrinkCategory.ForeColor = System.Drawing.Color.White;
-            this.comboBoxDrinkCategory.FormattingEnabled = true;
-            this.comboBoxDrinkCategory.Location = new System.Drawing.Point(165, 254);
-            this.comboBoxDrinkCategory.Name = "comboBoxDrinkCategory";
-            this.comboBoxDrinkCategory.Size = new System.Drawing.Size(370, 30);
-            this.comboBoxDrinkCategory.TabIndex = 17;
-            // 
-            // numericUpDownPrice
-            // 
-            this.numericUpDownPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.numericUpDownPrice.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownPrice.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownPrice.Location = new System.Drawing.Point(165, 335);
-            this.numericUpDownPrice.Maximum = new decimal(new int[] {
-            100000000,
-            0,
-            0,
-            0});
-            this.numericUpDownPrice.Name = "numericUpDownPrice";
-            this.numericUpDownPrice.Size = new System.Drawing.Size(370, 31);
-            this.numericUpDownPrice.TabIndex = 18;
-            this.numericUpDownPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dgvDrink.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDrink_CellContentClick);
             // 
             // panelTopLeft
             // 
@@ -417,6 +232,45 @@
             this.buttonDrinkDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonDrinkDelete.Textcolor = System.Drawing.Color.White;
             this.buttonDrinkDelete.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // buttonDrinkView
+            // 
+            this.buttonDrinkView.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonDrinkView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonDrinkView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDrinkView.BorderRadius = 0;
+            this.buttonDrinkView.ButtonText = "View";
+            this.buttonDrinkView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDrinkView.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDrinkView.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonDrinkView.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkView.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDrinkView.Iconimage = null;
+            this.buttonDrinkView.Iconimage_right = null;
+            this.buttonDrinkView.Iconimage_right_Selected = null;
+            this.buttonDrinkView.Iconimage_Selected = null;
+            this.buttonDrinkView.IconMarginLeft = 0;
+            this.buttonDrinkView.IconMarginRight = 0;
+            this.buttonDrinkView.IconRightVisible = false;
+            this.buttonDrinkView.IconRightZoom = 0D;
+            this.buttonDrinkView.IconVisible = false;
+            this.buttonDrinkView.IconZoom = 90D;
+            this.buttonDrinkView.IsTab = false;
+            this.buttonDrinkView.Location = new System.Drawing.Point(447, 0);
+            this.buttonDrinkView.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonDrinkView.Name = "buttonDrinkView";
+            this.buttonDrinkView.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkView.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonDrinkView.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDrinkView.selected = false;
+            this.buttonDrinkView.Size = new System.Drawing.Size(81, 55);
+            this.buttonDrinkView.TabIndex = 9;
+            this.buttonDrinkView.Text = "View";
+            this.buttonDrinkView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDrinkView.Textcolor = System.Drawing.Color.White;
+            this.buttonDrinkView.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkView.Click += new System.EventHandler(this.buttonDrinkView_Click);
             // 
             // buttonDrinkAdd
             // 
@@ -496,44 +350,202 @@
             this.buttonDrinkEdit.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDrinkEdit.Click += new System.EventHandler(this.buttonDrinkEdit_Click);
             // 
-            // buttonDrinkView
+            // panelMainDrinkRight
             // 
-            this.buttonDrinkView.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
-            this.buttonDrinkView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDrinkView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDrinkView.BorderRadius = 0;
-            this.buttonDrinkView.ButtonText = "View";
-            this.buttonDrinkView.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDrinkView.DisabledColor = System.Drawing.Color.Gray;
-            this.buttonDrinkView.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonDrinkView.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkView.Iconcolor = System.Drawing.Color.Transparent;
-            this.buttonDrinkView.Iconimage = null;
-            this.buttonDrinkView.Iconimage_right = null;
-            this.buttonDrinkView.Iconimage_right_Selected = null;
-            this.buttonDrinkView.Iconimage_Selected = null;
-            this.buttonDrinkView.IconMarginLeft = 0;
-            this.buttonDrinkView.IconMarginRight = 0;
-            this.buttonDrinkView.IconRightVisible = false;
-            this.buttonDrinkView.IconRightZoom = 0D;
-            this.buttonDrinkView.IconVisible = false;
-            this.buttonDrinkView.IconZoom = 90D;
-            this.buttonDrinkView.IsTab = false;
-            this.buttonDrinkView.Location = new System.Drawing.Point(447, 0);
-            this.buttonDrinkView.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonDrinkView.Name = "buttonDrinkView";
-            this.buttonDrinkView.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.buttonDrinkView.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.buttonDrinkView.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonDrinkView.selected = false;
-            this.buttonDrinkView.Size = new System.Drawing.Size(81, 55);
-            this.buttonDrinkView.TabIndex = 9;
-            this.buttonDrinkView.Text = "View";
-            this.buttonDrinkView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonDrinkView.Textcolor = System.Drawing.Color.White;
-            this.buttonDrinkView.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkView.Click += new System.EventHandler(this.buttonDrinkView_Click);
+            this.panelMainDrinkRight.Controls.Add(this.numericUpDownPrice);
+            this.panelMainDrinkRight.Controls.Add(this.comboBoxDrinkCategory);
+            this.panelMainDrinkRight.Controls.Add(this.label4);
+            this.panelMainDrinkRight.Controls.Add(this.label3);
+            this.panelMainDrinkRight.Controls.Add(this.label2);
+            this.panelMainDrinkRight.Controls.Add(this.label1);
+            this.panelMainDrinkRight.Controls.Add(this.txtDrinkname);
+            this.panelMainDrinkRight.Controls.Add(this.txtDrinkID);
+            this.panelMainDrinkRight.Controls.Add(this.panelTopRight);
+            this.panelMainDrinkRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelMainDrinkRight.Location = new System.Drawing.Point(528, 0);
+            this.panelMainDrinkRight.Name = "panelMainDrinkRight";
+            this.panelMainDrinkRight.Size = new System.Drawing.Size(539, 655);
+            this.panelMainDrinkRight.TabIndex = 1;
+            // 
+            // numericUpDownPrice
+            // 
+            this.numericUpDownPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.numericUpDownPrice.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownPrice.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownPrice.Location = new System.Drawing.Point(165, 335);
+            this.numericUpDownPrice.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.numericUpDownPrice.Name = "numericUpDownPrice";
+            this.numericUpDownPrice.Size = new System.Drawing.Size(370, 31);
+            this.numericUpDownPrice.TabIndex = 18;
+            this.numericUpDownPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBoxDrinkCategory
+            // 
+            this.comboBoxDrinkCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.comboBoxDrinkCategory.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDrinkCategory.ForeColor = System.Drawing.Color.White;
+            this.comboBoxDrinkCategory.FormattingEnabled = true;
+            this.comboBoxDrinkCategory.Location = new System.Drawing.Point(165, 254);
+            this.comboBoxDrinkCategory.Name = "comboBoxDrinkCategory";
+            this.comboBoxDrinkCategory.Size = new System.Drawing.Size(370, 30);
+            this.comboBoxDrinkCategory.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(6, 339);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 22);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Price:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(6, 258);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 22);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Category:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(6, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 22);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Drink name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 22);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "ID:";
+            // 
+            // txtDrinkname
+            // 
+            this.txtDrinkname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkname.BorderThickness = 1;
+            this.txtDrinkname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDrinkname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDrinkname.ForeColor = System.Drawing.Color.White;
+            this.txtDrinkname.isPassword = false;
+            this.txtDrinkname.Location = new System.Drawing.Point(165, 173);
+            this.txtDrinkname.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDrinkname.Name = "txtDrinkname";
+            this.txtDrinkname.Size = new System.Drawing.Size(370, 36);
+            this.txtDrinkname.TabIndex = 12;
+            this.txtDrinkname.Text = "Search drink here...";
+            this.txtDrinkname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDrinkID
+            // 
+            this.txtDrinkID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkID.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkID.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtDrinkID.BorderThickness = 1;
+            this.txtDrinkID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDrinkID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDrinkID.ForeColor = System.Drawing.Color.White;
+            this.txtDrinkID.isPassword = false;
+            this.txtDrinkID.Location = new System.Drawing.Point(165, 92);
+            this.txtDrinkID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDrinkID.Name = "txtDrinkID";
+            this.txtDrinkID.Size = new System.Drawing.Size(370, 36);
+            this.txtDrinkID.TabIndex = 10;
+            this.txtDrinkID.Text = "Search drink here...";
+            this.txtDrinkID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDrinkID.OnValueChanged += new System.EventHandler(this.txtDrinkID_OnValueChanged);
+            // 
+            // panelTopRight
+            // 
+            this.panelTopRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panelTopRight.Controls.Add(this.buttonDrinkSearch);
+            this.panelTopRight.Controls.Add(this.txtSearchDrinkName);
+            this.panelTopRight.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopRight.Location = new System.Drawing.Point(0, 0);
+            this.panelTopRight.Name = "panelTopRight";
+            this.panelTopRight.Size = new System.Drawing.Size(539, 55);
+            this.panelTopRight.TabIndex = 9;
+            this.panelTopRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // buttonDrinkSearch
+            // 
+            this.buttonDrinkSearch.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonDrinkSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDrinkSearch.BorderRadius = 0;
+            this.buttonDrinkSearch.ButtonText = "Search";
+            this.buttonDrinkSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDrinkSearch.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonDrinkSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonDrinkSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrinkSearch.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonDrinkSearch.Iconimage = null;
+            this.buttonDrinkSearch.Iconimage_right = null;
+            this.buttonDrinkSearch.Iconimage_right_Selected = null;
+            this.buttonDrinkSearch.Iconimage_Selected = null;
+            this.buttonDrinkSearch.IconMarginLeft = 0;
+            this.buttonDrinkSearch.IconMarginRight = 0;
+            this.buttonDrinkSearch.IconRightVisible = false;
+            this.buttonDrinkSearch.IconRightZoom = 0D;
+            this.buttonDrinkSearch.IconVisible = false;
+            this.buttonDrinkSearch.IconZoom = 90D;
+            this.buttonDrinkSearch.IsTab = false;
+            this.buttonDrinkSearch.Location = new System.Drawing.Point(439, 0);
+            this.buttonDrinkSearch.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.buttonDrinkSearch.Name = "buttonDrinkSearch";
+            this.buttonDrinkSearch.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonDrinkSearch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonDrinkSearch.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonDrinkSearch.selected = false;
+            this.buttonDrinkSearch.Size = new System.Drawing.Size(100, 55);
+            this.buttonDrinkSearch.TabIndex = 9;
+            this.buttonDrinkSearch.Text = "Search";
+            this.buttonDrinkSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDrinkSearch.Textcolor = System.Drawing.Color.White;
+            this.buttonDrinkSearch.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtSearchDrinkName
+            // 
+            this.txtSearchDrinkName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtSearchDrinkName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtSearchDrinkName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtSearchDrinkName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
+            this.txtSearchDrinkName.BorderThickness = 1;
+            this.txtSearchDrinkName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchDrinkName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSearchDrinkName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchDrinkName.ForeColor = System.Drawing.Color.White;
+            this.txtSearchDrinkName.isPassword = false;
+            this.txtSearchDrinkName.Location = new System.Drawing.Point(0, 0);
+            this.txtSearchDrinkName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchDrinkName.Name = "txtSearchDrinkName";
+            this.txtSearchDrinkName.Size = new System.Drawing.Size(539, 55);
+            this.txtSearchDrinkName.TabIndex = 3;
+            this.txtSearchDrinkName.Text = "Search drink here...";
+            this.txtSearchDrinkName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbRevenue
             // 
@@ -565,6 +577,15 @@
             this.panelMainRevenue.Size = new System.Drawing.Size(1067, 655);
             this.panelMainRevenue.TabIndex = 2;
             this.panelMainRevenue.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMainRevenue_Paint);
+            // 
+            // paneldgv
+            // 
+            this.paneldgv.Controls.Add(this.bunifuCustomDataGrid1);
+            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneldgv.Location = new System.Drawing.Point(0, 55);
+            this.paneldgv.Name = "paneldgv";
+            this.paneldgv.Size = new System.Drawing.Size(1067, 600);
+            this.paneldgv.TabIndex = 4;
             // 
             // bunifuCustomDataGrid1
             // 
@@ -604,37 +625,6 @@
             this.panelHeader.Size = new System.Drawing.Size(1067, 55);
             this.panelHeader.TabIndex = 3;
             // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = "";
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 55);
-            this.bunifuDatepicker1.TabIndex = 0;
-            this.bunifuDatepicker1.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
-            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
-            // 
-            // bunifuDatepicker2
-            // 
-            this.bunifuDatepicker2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker2.FormatCustom = "";
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(764, 0);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(303, 55);
-            this.bunifuDatepicker2.TabIndex = 1;
-            this.bunifuDatepicker2.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
-            // 
             // buttonStatistics
             // 
             this.buttonStatistics.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
@@ -670,6 +660,37 @@
             this.buttonStatistics.Textcolor = System.Drawing.Color.White;
             this.buttonStatistics.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // bunifuDatepicker1
+            // 
+            this.bunifuDatepicker1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = "";
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 55);
+            this.bunifuDatepicker1.TabIndex = 0;
+            this.bunifuDatepicker1.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
+            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
+            // 
+            // bunifuDatepicker2
+            // 
+            this.bunifuDatepicker2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bunifuDatepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.bunifuDatepicker2.BorderRadius = 0;
+            this.bunifuDatepicker2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker2.FormatCustom = "";
+            this.bunifuDatepicker2.Location = new System.Drawing.Point(764, 0);
+            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
+            this.bunifuDatepicker2.Size = new System.Drawing.Size(303, 55);
+            this.bunifuDatepicker2.TabIndex = 1;
+            this.bunifuDatepicker2.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
+            // 
             // tabControlAdmin
             // 
             this.tabControlAdmin.Controls.Add(this.tbRevenue);
@@ -679,29 +700,11 @@
             this.tabControlAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlAdmin.Location = new System.Drawing.Point(0, 0);
             this.tabControlAdmin.Name = "tabControlAdmin";
-            this.tabControlAdmin.SelectedIndex = 0;
+            this.tabControlAdmin.SelectedIndex = 1;
             this.tabControlAdmin.Size = new System.Drawing.Size(1075, 697);
             this.tabControlAdmin.TabIndex = 0;
             this.tabControlAdmin.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tabControlAdmin.UseSelectable = true;
-            // 
-            // panelMainDrinkLeft
-            // 
-            this.panelMainDrinkLeft.Controls.Add(this.dgvDrink);
-            this.panelMainDrinkLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainDrinkLeft.Location = new System.Drawing.Point(0, 55);
-            this.panelMainDrinkLeft.Name = "panelMainDrinkLeft";
-            this.panelMainDrinkLeft.Size = new System.Drawing.Size(528, 600);
-            this.panelMainDrinkLeft.TabIndex = 10;
-            // 
-            // paneldgv
-            // 
-            this.paneldgv.Controls.Add(this.bunifuCustomDataGrid1);
-            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldgv.Location = new System.Drawing.Point(0, 55);
-            this.paneldgv.Name = "paneldgv";
-            this.paneldgv.Size = new System.Drawing.Size(1067, 600);
-            this.paneldgv.TabIndex = 4;
             // 
             // Admin
             // 
@@ -715,19 +718,19 @@
             this.Load += new System.EventHandler(this.admin_Load);
             this.tbDrink.ResumeLayout(false);
             this.panelMainDrink.ResumeLayout(false);
+            this.panelMainDrinkLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrink)).EndInit();
+            this.panelTopLeft.ResumeLayout(false);
             this.panelMainDrinkRight.ResumeLayout(false);
             this.panelMainDrinkRight.PerformLayout();
-            this.panelTopRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).EndInit();
-            this.panelTopLeft.ResumeLayout(false);
+            this.panelTopRight.ResumeLayout(false);
             this.tbRevenue.ResumeLayout(false);
             this.panelMainRevenue.ResumeLayout(false);
+            this.paneldgv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.tabControlAdmin.ResumeLayout(false);
-            this.panelMainDrinkLeft.ResumeLayout(false);
-            this.paneldgv.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

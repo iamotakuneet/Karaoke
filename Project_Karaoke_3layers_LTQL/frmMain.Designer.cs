@@ -557,6 +557,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1075, 697);
             this.panelMain.TabIndex = 2;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // notifyInTrayIcon
             // 

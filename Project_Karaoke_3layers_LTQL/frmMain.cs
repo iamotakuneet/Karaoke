@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
@@ -20,7 +22,9 @@ namespace Project_Karaoke_3layers_LTQL
             fLoginAlert.ShowDialog();        
             //buttonAdmin.selected = true;
             buttonShow.Visible = false;
+ 
         }
+
 
         public FrmMain(IContainer components, Panel panelLeft, Panel panelTop, PictureBox pictureBox1, Panel panelDashBoard, BunifuImageButton bunifuImageButton1)
         {
@@ -196,6 +200,11 @@ namespace Project_Karaoke_3layers_LTQL
         }
 
         private void Home_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
         }

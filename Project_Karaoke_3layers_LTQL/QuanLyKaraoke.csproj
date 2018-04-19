@@ -84,6 +84,7 @@
     <Compile Include="ChangeRoom.Designer.cs">
       <DependentUpon>ChangeRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="exitAlert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +193,9 @@
     <Content Include="Resources\loli2.png" />
     <Content Include="Resources\loli5.png" />
     <None Include="Resources\Onii-chan!! Song Baka Baka!!.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
