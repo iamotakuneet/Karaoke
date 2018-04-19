@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbAccount = new MetroFramework.Controls.MetroTabPage();
             this.tbRoom = new MetroFramework.Controls.MetroTabPage();
             this.tbDrink = new MetroFramework.Controls.MetroTabPage();
@@ -55,7 +55,7 @@
             this.buttonDrinkEdit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonDrinkView = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tbRevenue = new MetroFramework.Controls.MetroTabPage();
-            this.panelFill = new System.Windows.Forms.Panel();
+            this.panelMainRevenue = new System.Windows.Forms.Panel();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
@@ -63,6 +63,7 @@
             this.buttonStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabControlAdmin = new MetroFramework.Controls.MetroTabControl();
             this.panelMainDrinkLeft = new System.Windows.Forms.Panel();
+            this.paneldgv = new System.Windows.Forms.Panel();
             this.tbDrink.SuspendLayout();
             this.panelMainDrink.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrink)).BeginInit();
@@ -71,11 +72,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
             this.panelTopLeft.SuspendLayout();
             this.tbRevenue.SuspendLayout();
-            this.panelFill.SuspendLayout();
+            this.panelMainRevenue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panelHeader.SuspendLayout();
             this.tabControlAdmin.SuspendLayout();
             this.panelMainDrinkLeft.SuspendLayout();
+            this.paneldgv.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbAccount
@@ -143,19 +145,19 @@
             // 
             // dgvDrink
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDrink.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
             this.dgvDrink.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDrink.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDrink.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDrink.DoubleBuffered = true;
@@ -536,7 +538,7 @@
             // tbRevenue
             // 
             this.tbRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.tbRevenue.Controls.Add(this.panelFill);
+            this.tbRevenue.Controls.Add(this.panelMainRevenue);
             this.tbRevenue.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbRevenue.ForeColor = System.Drawing.Color.White;
             this.tbRevenue.HorizontalScrollbarBarColor = true;
@@ -551,32 +553,34 @@
             this.tbRevenue.VerticalScrollbarBarColor = true;
             this.tbRevenue.VerticalScrollbarHighlightOnWheel = false;
             this.tbRevenue.VerticalScrollbarSize = 10;
+            this.tbRevenue.Click += new System.EventHandler(this.tbRevenue_Click);
             // 
-            // panelFill
+            // panelMainRevenue
             // 
-            this.panelFill.Controls.Add(this.panelHeader);
-            this.panelFill.Controls.Add(this.bunifuCustomDataGrid1);
-            this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill.Location = new System.Drawing.Point(0, 0);
-            this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(1067, 655);
-            this.panelFill.TabIndex = 2;
+            this.panelMainRevenue.Controls.Add(this.paneldgv);
+            this.panelMainRevenue.Controls.Add(this.panelHeader);
+            this.panelMainRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainRevenue.Location = new System.Drawing.Point(0, 0);
+            this.panelMainRevenue.Name = "panelMainRevenue";
+            this.panelMainRevenue.Size = new System.Drawing.Size(1067, 655);
+            this.panelMainRevenue.TabIndex = 2;
+            this.panelMainRevenue.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMainRevenue_Paint);
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
@@ -586,14 +590,14 @@
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1067, 655);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1067, 600);
             this.bunifuCustomDataGrid1.TabIndex = 0;
             // 
             // panelHeader
             // 
             this.panelHeader.Controls.Add(this.buttonStatistics);
-            this.panelHeader.Controls.Add(this.bunifuDatepicker2);
             this.panelHeader.Controls.Add(this.bunifuDatepicker1);
+            this.panelHeader.Controls.Add(this.bunifuDatepicker2);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
@@ -675,7 +679,7 @@
             this.tabControlAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlAdmin.Location = new System.Drawing.Point(0, 0);
             this.tabControlAdmin.Name = "tabControlAdmin";
-            this.tabControlAdmin.SelectedIndex = 1;
+            this.tabControlAdmin.SelectedIndex = 0;
             this.tabControlAdmin.Size = new System.Drawing.Size(1075, 697);
             this.tabControlAdmin.TabIndex = 0;
             this.tabControlAdmin.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -689,6 +693,15 @@
             this.panelMainDrinkLeft.Name = "panelMainDrinkLeft";
             this.panelMainDrinkLeft.Size = new System.Drawing.Size(528, 600);
             this.panelMainDrinkLeft.TabIndex = 10;
+            // 
+            // paneldgv
+            // 
+            this.paneldgv.Controls.Add(this.bunifuCustomDataGrid1);
+            this.paneldgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneldgv.Location = new System.Drawing.Point(0, 55);
+            this.paneldgv.Name = "paneldgv";
+            this.paneldgv.Size = new System.Drawing.Size(1067, 600);
+            this.paneldgv.TabIndex = 4;
             // 
             // Admin
             // 
@@ -709,11 +722,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).EndInit();
             this.panelTopLeft.ResumeLayout(false);
             this.tbRevenue.ResumeLayout(false);
-            this.panelFill.ResumeLayout(false);
+            this.panelMainRevenue.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.tabControlAdmin.ResumeLayout(false);
             this.panelMainDrinkLeft.ResumeLayout(false);
+            this.paneldgv.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -743,7 +757,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtSearchDrinkName;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvDrink;
         private MetroFramework.Controls.MetroTabPage tbRevenue;
-        private System.Windows.Forms.Panel panelFill;
+        private System.Windows.Forms.Panel panelMainRevenue;
         private System.Windows.Forms.Panel panelHeader;
         private Bunifu.Framework.UI.BunifuFlatButton buttonStatistics;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
@@ -751,5 +765,6 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private MetroFramework.Controls.MetroTabControl tabControlAdmin;
         private System.Windows.Forms.Panel panelMainDrinkLeft;
+        private System.Windows.Forms.Panel paneldgv;
     }
 }

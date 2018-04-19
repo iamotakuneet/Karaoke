@@ -69,5 +69,15 @@ namespace Project_Karaoke_3layers_LTQL
         {
 
         }
+
+        private void tbRevenue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMainRevenue_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
