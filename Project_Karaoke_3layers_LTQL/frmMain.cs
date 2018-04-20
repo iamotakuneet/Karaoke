@@ -22,7 +22,6 @@ namespace Project_Karaoke_3layers_LTQL
             fLoginAlert.ShowDialog();        
             //buttonAdmin.selected = true;
             buttonShow.Visible = false;
- 
         }
 
 

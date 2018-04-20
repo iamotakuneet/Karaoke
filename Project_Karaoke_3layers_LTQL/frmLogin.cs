@@ -23,11 +23,9 @@ namespace Project_Karaoke_3layers_LTQL
             audio.Play();
         }
 
-        bool Login(string userName, string passWord)
-        {
+        bool Login(string userName, string passWord) => AccountDAO.Instance.Login(userName, passWord);
 
-            return AccountDAO.Instance.Login(userName, passWord);
-        }
+        //int checkType(string userName, string passWord) => AccountDAO.Instance.checkType(userName, passWord);
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
@@ -39,7 +37,8 @@ namespace Project_Karaoke_3layers_LTQL
                 FrmMain fm = new FrmMain();
                 fm.FormClosed += fm_FormClosed;
                 fm.Show();
-                UserAdmin = true;   
+                UserAdmin = true;
+          
             }
             else
             {
