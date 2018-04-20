@@ -117,6 +117,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.txtLoginPassword.Name = "txtLoginPassword";
             this.txtLoginPassword.Size = new System.Drawing.Size(288, 44);
             this.txtLoginPassword.TabIndex = 2;
+            this.txtLoginPassword.Text = "1";
             this.txtLoginPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtLoginPassword.OnValueChanged += new System.EventHandler(this.txtLoginPassword_OnValueChanged);
             // 
@@ -137,6 +138,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.txtLoginUser.Name = "txtLoginUser";
             this.txtLoginUser.Size = new System.Drawing.Size(288, 44);
             this.txtLoginUser.TabIndex = 1;
+            this.txtLoginUser.Text = "neet";
             this.txtLoginUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // buttonShowPassWord

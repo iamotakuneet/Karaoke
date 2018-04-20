@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.plOfferLeft = new System.Windows.Forms.Panel();
-            this.flpRoom = new System.Windows.Forms.FlowLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.plHeaderLeft = new System.Windows.Forms.Panel();
-            this.buttonOfferMoreDish = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.plOfferMain = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.plHeaderLeft = new System.Windows.Forms.Panel();
+            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.buttonOfferMoreDish = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.flpRoom = new System.Windows.Forms.FlowLayoutPanel();
             this.plOfferLeft.SuspendLayout();
-            this.plHeaderLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
             this.plOfferMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.plHeaderLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // plOfferLeft
@@ -54,37 +54,25 @@
             this.plOfferLeft.Size = new System.Drawing.Size(472, 697);
             this.plOfferLeft.TabIndex = 5;
             // 
-            // flpRoom
+            // plOfferMain
             // 
-            this.flpRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.flpRoom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpRoom.Location = new System.Drawing.Point(0, 0);
-            this.flpRoom.Name = "flpRoom";
-            this.flpRoom.Size = new System.Drawing.Size(603, 697);
-            this.flpRoom.TabIndex = 6;
+            this.plOfferMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.plOfferMain.Controls.Add(this.dataGridView1);
+            this.plOfferMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plOfferMain.Location = new System.Drawing.Point(0, 80);
+            this.plOfferMain.Name = "plOfferMain";
+            this.plOfferMain.Size = new System.Drawing.Size(472, 617);
+            this.plOfferMain.TabIndex = 4;
             // 
-            // comboBox1
+            // dataGridView1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(246, 29);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 43);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(246, 29);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(472, 617);
+            this.dataGridView1.TabIndex = 0;
             // 
             // plHeaderLeft
             // 
@@ -98,6 +86,17 @@
             this.plHeaderLeft.Name = "plHeaderLeft";
             this.plHeaderLeft.Size = new System.Drawing.Size(472, 80);
             this.plHeaderLeft.TabIndex = 2;
+            // 
+            // numericUpDown
+            // 
+            this.numericUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.numericUpDown.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown.Location = new System.Drawing.Point(402, 30);
+            this.numericUpDown.Name = "numericUpDown";
+            this.numericUpDown.Size = new System.Drawing.Size(67, 27);
+            this.numericUpDown.TabIndex = 10;
+            this.numericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonOfferMoreDish
             // 
@@ -137,36 +136,37 @@
             this.buttonOfferMoreDish.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOfferMoreDish.Click += new System.EventHandler(this.buttonDrinkEdit_Click);
             // 
-            // numericUpDown
+            // comboBox1
             // 
-            this.numericUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.numericUpDown.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown.Location = new System.Drawing.Point(402, 30);
-            this.numericUpDown.Name = "numericUpDown";
-            this.numericUpDown.Size = new System.Drawing.Size(67, 27);
-            this.numericUpDown.TabIndex = 10;
-            this.numericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 8);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(246, 29);
+            this.comboBox1.TabIndex = 0;
             // 
-            // plOfferMain
+            // comboBox2
             // 
-            this.plOfferMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
-            this.plOfferMain.Controls.Add(this.dataGridView1);
-            this.plOfferMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plOfferMain.Location = new System.Drawing.Point(0, 80);
-            this.plOfferMain.Name = "plOfferMain";
-            this.plOfferMain.Size = new System.Drawing.Size(472, 617);
-            this.plOfferMain.TabIndex = 4;
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.White;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(6, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(246, 29);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // flpRoom
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(472, 617);
-            this.dataGridView1.TabIndex = 0;
+            this.flpRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.flpRoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpRoom.Location = new System.Drawing.Point(0, 0);
+            this.flpRoom.Name = "flpRoom";
+            this.flpRoom.Size = new System.Drawing.Size(603, 697);
+            this.flpRoom.TabIndex = 6;
             // 
             // OfferDrink
             // 
@@ -179,10 +179,10 @@
             this.Size = new System.Drawing.Size(1075, 697);
             this.Load += new System.EventHandler(this.OfferDrink_Load);
             this.plOfferLeft.ResumeLayout(false);
-            this.plHeaderLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
             this.plOfferMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.plHeaderLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }

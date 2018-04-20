@@ -8,16 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Project_Karaoke_3layers_LTQL
 {
     using Bunifu.Framework.UI;
+
+    using MetroFramework.Properties;
 
     using Project_Karaoke_3layers_LTQL.DAO;
     using Project_Karaoke_3layers_LTQL.DTO;
 
     public partial class OfferDrink : UserControl
     {
-        #region Method
+        #region Method 
 
         private static OfferDrink _instance;
 
@@ -37,15 +40,21 @@ namespace Project_Karaoke_3layers_LTQL
             
         }
 
+        //Pha mau`
+        Color colorEmpty = System.Drawing.ColorTranslator.FromHtml("#37474F"); // darkGray
+        Color colorHover = System.Drawing.ColorTranslator.FromHtml("#29B6F6"); // blue
+        Color colorFull = System.Drawing.ColorTranslator.FromHtml("#FF8A65");  // Orange
+
+
         void LoadRoom() // Load phòng, hiển thị ra từng button
         {
             List<Room> roomList = RoomDAO.Instance.loadRoomList(); // lấy được danh sách room
             foreach (Room item in roomList)
             {
                 BunifuFlatButton bnt =new BunifuFlatButton();
-                bnt.BackColor = Color.BlueViolet;
-                bnt.IconVisible = false;
-                bnt.TextFont = new Font("Noto Sans", 14, FontStyle.Regular); 
+                bnt.Text = item.Name + Environment.NewLine + item.Status;
+                
+                bnt.TextFont = new Font("Arial", 16, FontStyle.Regular); 
                 bnt.Textcolor = Color.White;
                 bnt.Height = RoomDAO.roomHeight;
                 bnt.Width = RoomDAO.roomWidth;
@@ -54,6 +63,21 @@ namespace Project_Karaoke_3layers_LTQL
                 margin.Left = 15;
                 margin.Top = 10;
                 bnt.Margin = margin;
+                switch (item.Status)
+                {
+                    case "Trống":
+                        bnt.BackColor = this.colorEmpty;
+                        bnt.Normalcolor = this.colorEmpty;
+                        bnt.OnHovercolor = this.colorHover;
+                        break;
+                    default:
+                        bnt.BackColor = this.colorFull;
+                        bnt.Normalcolor = this.colorFull;
+                        bnt.OnHovercolor = this.colorHover;
+                        break;
+                       
+                }
+                
                 this.flpRoom.Controls.Add(bnt);
                 
             }
