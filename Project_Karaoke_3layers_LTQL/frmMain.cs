@@ -10,6 +10,12 @@ using Project_Karaoke_3layers_LTQL.Properties;
 
 namespace Project_Karaoke_3layers_LTQL
 {
+    using System.Collections.Generic;
+    using System.Windows.Forms.VisualStyles;
+
+    using Project_Karaoke_3layers_LTQL.DAO;
+    using Project_Karaoke_3layers_LTQL.DTO;
+
     public partial class FrmMain : Form
     {
         public FrmMain() => InitializeComponent();
@@ -198,9 +204,10 @@ namespace Project_Karaoke_3layers_LTQL
             }
         }
 
+     
         private void Home_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)

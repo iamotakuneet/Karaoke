@@ -41,9 +41,9 @@ namespace Project_Karaoke_3layers_LTQL
         }
 
         //Pha mau`
-        Color colorEmpty = System.Drawing.ColorTranslator.FromHtml("#37474F"); // darkGray
-        Color colorHover = System.Drawing.ColorTranslator.FromHtml("#29B6F6"); // blue
-        Color colorFull = System.Drawing.ColorTranslator.FromHtml("#FF8A65");  // Orange
+        Color color = System.Drawing.ColorTranslator.FromHtml("#37474F"); // darkGray
+        Color colorHoverEmpty = System.Drawing.ColorTranslator.FromHtml("#40C4FF"); // blue
+        Color colorHoverFull = System.Drawing.ColorTranslator.FromHtml("#FF8A65");  // Orange
 
 
         void LoadRoom() // Load phòng, hiển thị ra từng button
@@ -66,17 +66,24 @@ namespace Project_Karaoke_3layers_LTQL
                 switch (item.Status)
                 {
                     case "Trống":
-                        bnt.BackColor = this.colorEmpty;
-                        bnt.Normalcolor = this.colorEmpty;
-                        bnt.OnHovercolor = this.colorHover;
+                        bnt.BackColor = this.color;
+                        bnt.Normalcolor = this.color;
+                        bnt.OnHovercolor = this.colorHoverEmpty;
+                        bnt.Activecolor = this.colorHoverEmpty;
+                        bnt.Iconimage = Image.FromFile(@"C:\Users\jeann\OneDrive\Desktop\GitHub\Karaoke\Project_Karaoke_3layers_LTQL\Resources\\Empty.png").GetThumbnailImage(100, 100, null, IntPtr.Zero);
+                        bnt.IconZoom = 24;
                         break;
                     default:
-                        bnt.BackColor = this.colorFull;
-                        bnt.Normalcolor = this.colorFull;
-                        bnt.OnHovercolor = this.colorHover;
+                        bnt.BackColor = this.color;
+                        bnt.Normalcolor = this.color;
+                        bnt.OnHovercolor = this.colorHoverFull;
+                        bnt.Activecolor = this.colorHoverFull;
+                        bnt.Iconimage = Image.FromFile(@"C:\Users\jeann\OneDrive\Desktop\GitHub\Karaoke\Project_Karaoke_3layers_LTQL\Resources\\Full.png").GetThumbnailImage(100, 100, null, IntPtr.Zero);
+                        bnt.IconZoom = 28;
                         break;
                        
                 }
+                
                 
                 this.flpRoom.Controls.Add(bnt);
                 

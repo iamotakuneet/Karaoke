@@ -28,7 +28,7 @@ namespace Project_Karaoke_3layers_LTQL.DAO
             private set => RoomDAO.instance = value;
         }
 
-        public static int roomWidth = 275;
+        public static int roomWidth = 269;
 
         public static int roomHeight = 150;
 
