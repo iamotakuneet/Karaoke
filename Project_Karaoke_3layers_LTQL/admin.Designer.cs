@@ -64,6 +64,10 @@
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.tabControlAdmin = new MetroFramework.Controls.MetroTabControl();
+            this.panelAccountMainHeader = new System.Windows.Forms.Panel();
+            this.panelAccountMainLeft = new System.Windows.Forms.Panel();
+            this.panelAccountMainRight = new System.Windows.Forms.Panel();
+            this.tbAccount.SuspendLayout();
             this.tbDrink.SuspendLayout();
             this.panelMainDrink.SuspendLayout();
             this.panelMainDrinkLeft.SuspendLayout();
@@ -82,6 +86,9 @@
             // 
             // tbAccount
             // 
+            this.tbAccount.Controls.Add(this.panelAccountMainRight);
+            this.tbAccount.Controls.Add(this.panelAccountMainLeft);
+            this.tbAccount.Controls.Add(this.panelAccountMainHeader);
             this.tbAccount.HorizontalScrollbarBarColor = true;
             this.tbAccount.HorizontalScrollbarHighlightOnWheel = false;
             this.tbAccount.HorizontalScrollbarSize = 10;
@@ -700,11 +707,38 @@
             this.tabControlAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlAdmin.Location = new System.Drawing.Point(0, 0);
             this.tabControlAdmin.Name = "tabControlAdmin";
-            this.tabControlAdmin.SelectedIndex = 1;
+            this.tabControlAdmin.SelectedIndex = 3;
             this.tabControlAdmin.Size = new System.Drawing.Size(1075, 697);
             this.tabControlAdmin.TabIndex = 0;
             this.tabControlAdmin.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tabControlAdmin.UseSelectable = true;
+            // 
+            // panelAccountMainHeader
+            // 
+            this.panelAccountMainHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panelAccountMainHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelAccountMainHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelAccountMainHeader.Name = "panelAccountMainHeader";
+            this.panelAccountMainHeader.Size = new System.Drawing.Size(1067, 55);
+            this.panelAccountMainHeader.TabIndex = 2;
+            // 
+            // panelAccountMainLeft
+            // 
+            this.panelAccountMainLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panelAccountMainLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelAccountMainLeft.Location = new System.Drawing.Point(0, 55);
+            this.panelAccountMainLeft.Name = "panelAccountMainLeft";
+            this.panelAccountMainLeft.Size = new System.Drawing.Size(533, 600);
+            this.panelAccountMainLeft.TabIndex = 3;
+            // 
+            // panelAccountMainRight
+            // 
+            this.panelAccountMainRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panelAccountMainRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelAccountMainRight.Location = new System.Drawing.Point(530, 55);
+            this.panelAccountMainRight.Name = "panelAccountMainRight";
+            this.panelAccountMainRight.Size = new System.Drawing.Size(537, 600);
+            this.panelAccountMainRight.TabIndex = 4;
             // 
             // Admin
             // 
@@ -716,6 +750,7 @@
             this.Name = "Admin";
             this.Size = new System.Drawing.Size(1075, 697);
             this.Load += new System.EventHandler(this.admin_Load);
+            this.tbAccount.ResumeLayout(false);
             this.tbDrink.ResumeLayout(false);
             this.panelMainDrink.ResumeLayout(false);
             this.panelMainDrinkLeft.ResumeLayout(false);
@@ -769,5 +804,8 @@
         private MetroFramework.Controls.MetroTabControl tabControlAdmin;
         private System.Windows.Forms.Panel panelMainDrinkLeft;
         private System.Windows.Forms.Panel paneldgv;
+        private System.Windows.Forms.Panel panelAccountMainRight;
+        private System.Windows.Forms.Panel panelAccountMainLeft;
+        private System.Windows.Forms.Panel panelAccountMainHeader;
     }
 }

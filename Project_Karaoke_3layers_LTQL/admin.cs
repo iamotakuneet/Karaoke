@@ -30,14 +30,18 @@ namespace Project_Karaoke_3layers_LTQL
         private void admin_Load(object sender, EventArgs e)
         {
             LoadAccountList();
+            LoadFoodList();
+        }
+
+        void LoadFoodList()
+        {
+            
         }
 
         void LoadAccountList()
         {
-            string query = "EXEC dbo.USP_GetListAccountByUserName @userName";// phải cách ra để k lỗi
-            
-            DataProvider provider =new DataProvider();
-            dgvDrink.DataSource = provider.ExecuteQuery(query,new object[]{"neet"});
+            string query = "EXEC dbo.USP_GetListAccountByUserName @userName";// phải cách ra để k lỗi        
+            dgvDrink.DataSource = DataProvider.Instance.ExecuteQuery(query,new object[]{"neet"});
         }
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)

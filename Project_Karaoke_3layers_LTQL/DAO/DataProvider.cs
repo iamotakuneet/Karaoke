@@ -9,8 +9,16 @@ namespace Project_Karaoke_3layers_LTQL.DAO
 {
     class DataProvider
     {
-        private string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=Karaoke;Integrated Security=True"; //chuỗi xác định kết nối đến thằng nào
+        private readonly string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=Karaoke;Integrated Security=True"; //chuỗi xác định kết nối đến thằng nào
 
+        private static DataProvider instance; // crtl +R +E
+
+        public static DataProvider Instance // Kiến trúc singleton
+        {
+            get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
+            private set => DataProvider.instance = value;
+        }
+        private DataProvider() { }
         public DataTable ExecuteQuery(string query, object[] parameter =null ) //null chỉ có thể đưa vào những parameter ở sau cùng( có thể nhiều paramter, nhưng là 1 list parameter null)
         {
             DataTable dataTable = new DataTable(); //tạo ra table để chứa table lấy ở trong sql
