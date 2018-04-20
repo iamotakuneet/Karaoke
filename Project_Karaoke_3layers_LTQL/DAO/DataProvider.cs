@@ -13,7 +13,7 @@ namespace Project_Karaoke_3layers_LTQL.DAO
 
         private static DataProvider instance; // crtl +R +E
 
-        public static DataProvider Instance // Kiến trúc singleton
+        public static DataProvider Instance // Kiến trúc singleton, chỉ duy nhất tồn tại 1 thể hiện trong chương trình
         {
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
             private set => DataProvider.instance = value;

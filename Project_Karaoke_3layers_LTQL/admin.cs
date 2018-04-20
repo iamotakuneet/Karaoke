@@ -35,13 +35,14 @@ namespace Project_Karaoke_3layers_LTQL
 
         void LoadFoodList()
         {
-            
+            string query = "";// phải cách ra để k lỗi      
+            this.dgvFoodAndDrink.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
 
         void LoadAccountList()
         {
             string query = "EXEC dbo.USP_GetListAccountByUserName @userName";// phải cách ra để k lỗi        
-            dgvDrink.DataSource = DataProvider.Instance.ExecuteQuery(query,new object[]{"neet"});
+            this.dgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query,new object[]{"neet"});
         }
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
@@ -95,6 +96,16 @@ namespace Project_Karaoke_3layers_LTQL
         }
 
         private void dgvDrink_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelAccountHeaderMainLeft_Paint(object sender, PaintEventArgs e)
         {
 
         }
