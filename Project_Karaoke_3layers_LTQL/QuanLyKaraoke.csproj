@@ -86,6 +86,8 @@
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\RoomDAO.cs" />
+    <Compile Include="DTO\Room.cs" />
     <Compile Include="frmExitAlert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,8 +197,6 @@
     <Content Include="Resources\loli5.png" />
     <None Include="Resources\Onii-chan!! Song Baka Baka!!.wav" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

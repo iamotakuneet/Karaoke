@@ -28,195 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OfferDrink));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtSearchDrink = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.buttonSearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.dgvOfferDrink = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.paneOfferDrinkLeft = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.comboBox = new MetroFramework.Controls.MetroComboBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOfferDrink)).BeginInit();
-            this.paneOfferDrinkLeft.SuspendLayout();
-            this.panelHeader.SuspendLayout();
+            this.plOfferLeft = new System.Windows.Forms.Panel();
+            this.flpRoom = new System.Windows.Forms.FlowLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.plHeaderLeft = new System.Windows.Forms.Panel();
+            this.buttonOfferMoreDish = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.plOfferMain = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.plOfferLeft.SuspendLayout();
+            this.plHeaderLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
+            this.plOfferMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtSearchDrink
+            // plOfferLeft
             // 
-            this.txtSearchDrink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrink.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrink.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrink.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(86)))));
-            this.txtSearchDrink.BorderThickness = 1;
-            this.txtSearchDrink.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchDrink.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtSearchDrink.ForeColor = System.Drawing.Color.White;
-            this.txtSearchDrink.isPassword = false;
-            this.txtSearchDrink.Location = new System.Drawing.Point(178, 8);
-            this.txtSearchDrink.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearchDrink.Name = "txtSearchDrink";
-            this.txtSearchDrink.Size = new System.Drawing.Size(370, 44);
-            this.txtSearchDrink.TabIndex = 2;
-            this.txtSearchDrink.Text = "           Search drink here...";
-            this.txtSearchDrink.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSearchDrink.OnValueChanged += new System.EventHandler(this.txtSearchDrink_OnValueChanged);
+            this.plOfferLeft.Controls.Add(this.plOfferMain);
+            this.plOfferLeft.Controls.Add(this.plHeaderLeft);
+            this.plOfferLeft.Dock = System.Windows.Forms.DockStyle.Right;
+            this.plOfferLeft.Location = new System.Drawing.Point(603, 0);
+            this.plOfferLeft.Name = "plOfferLeft";
+            this.plOfferLeft.Size = new System.Drawing.Size(472, 697);
+            this.plOfferLeft.TabIndex = 5;
             // 
-            // buttonSearch
+            // flpRoom
             // 
-            this.buttonSearch.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
-            this.buttonSearch.ImageActive = null;
-            this.buttonSearch.Location = new System.Drawing.Point(555, 8);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(44, 44);
-            this.buttonSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.buttonSearch.TabIndex = 3;
-            this.buttonSearch.TabStop = false;
-            this.buttonSearch.Zoom = 10;
-            this.buttonSearch.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.flpRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.flpRoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpRoom.Location = new System.Drawing.Point(0, 0);
+            this.flpRoom.Name = "flpRoom";
+            this.flpRoom.Size = new System.Drawing.Size(603, 697);
+            this.flpRoom.TabIndex = 6;
             // 
-            // dgvOfferDrink
+            // comboBox1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvOfferDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvOfferDrink.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
-            this.dgvOfferDrink.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvOfferDrink.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOfferDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvOfferDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOfferDrink.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvOfferDrink.DoubleBuffered = true;
-            this.dgvOfferDrink.EnableHeadersVisualStyles = false;
-            this.dgvOfferDrink.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvOfferDrink.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvOfferDrink.Location = new System.Drawing.Point(0, 0);
-            this.dgvOfferDrink.Name = "dgvOfferDrink";
-            this.dgvOfferDrink.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvOfferDrink.Size = new System.Drawing.Size(1075, 697);
-            this.dgvOfferDrink.TabIndex = 4;
-            this.dgvOfferDrink.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 8);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(246, 29);
+            this.comboBox1.TabIndex = 0;
             // 
-            // paneOfferDrinkLeft
+            // comboBox2
             // 
-            this.paneOfferDrinkLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.paneOfferDrinkLeft.Controls.Add(this.bunifuFlatButton1);
-            this.paneOfferDrinkLeft.Dock = System.Windows.Forms.DockStyle.Right;
-            this.paneOfferDrinkLeft.Location = new System.Drawing.Point(944, 0);
-            this.paneOfferDrinkLeft.Name = "paneOfferDrinkLeft";
-            this.paneOfferDrinkLeft.Size = new System.Drawing.Size(131, 697);
-            this.paneOfferDrinkLeft.TabIndex = 5;
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.White;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(6, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(246, 29);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // bunifuFlatButton1
+            // plHeaderLeft
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Cặc";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 60);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(249)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(131, 48);
-            this.bunifuFlatButton1.TabIndex = 0;
-            this.bunifuFlatButton1.Text = "Cặc";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plHeaderLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.plHeaderLeft.Controls.Add(this.numericUpDown);
+            this.plHeaderLeft.Controls.Add(this.buttonOfferMoreDish);
+            this.plHeaderLeft.Controls.Add(this.comboBox1);
+            this.plHeaderLeft.Controls.Add(this.comboBox2);
+            this.plHeaderLeft.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plHeaderLeft.Location = new System.Drawing.Point(0, 0);
+            this.plHeaderLeft.Name = "plHeaderLeft";
+            this.plHeaderLeft.Size = new System.Drawing.Size(472, 80);
+            this.plHeaderLeft.TabIndex = 2;
             // 
-            // comboBox
+            // buttonOfferMoreDish
             // 
-            this.comboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.comboBox.ForeColor = System.Drawing.Color.White;
-            this.comboBox.FormattingEnabled = true;
-            this.comboBox.ItemHeight = 23;
-            this.comboBox.Location = new System.Drawing.Point(773, 16);
-            this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(171, 29);
-            this.comboBox.TabIndex = 6;
-            this.comboBox.UseSelectable = true;
-            this.comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectedIndexChanged);
+            this.buttonOfferMoreDish.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(155)))), ((int)(((byte)(229)))));
+            this.buttonOfferMoreDish.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonOfferMoreDish.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonOfferMoreDish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonOfferMoreDish.BorderRadius = 0;
+            this.buttonOfferMoreDish.ButtonText = "Thêm Món";
+            this.buttonOfferMoreDish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOfferMoreDish.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonOfferMoreDish.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOfferMoreDish.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonOfferMoreDish.Iconimage = null;
+            this.buttonOfferMoreDish.Iconimage_right = null;
+            this.buttonOfferMoreDish.Iconimage_right_Selected = null;
+            this.buttonOfferMoreDish.Iconimage_Selected = null;
+            this.buttonOfferMoreDish.IconMarginLeft = 0;
+            this.buttonOfferMoreDish.IconMarginRight = 0;
+            this.buttonOfferMoreDish.IconRightVisible = false;
+            this.buttonOfferMoreDish.IconRightZoom = 0D;
+            this.buttonOfferMoreDish.IconVisible = false;
+            this.buttonOfferMoreDish.IconZoom = 90D;
+            this.buttonOfferMoreDish.IsTab = false;
+            this.buttonOfferMoreDish.Location = new System.Drawing.Point(264, 8);
+            this.buttonOfferMoreDish.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.buttonOfferMoreDish.Name = "buttonOfferMoreDish";
+            this.buttonOfferMoreDish.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.buttonOfferMoreDish.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.buttonOfferMoreDish.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonOfferMoreDish.selected = false;
+            this.buttonOfferMoreDish.Size = new System.Drawing.Size(126, 64);
+            this.buttonOfferMoreDish.TabIndex = 9;
+            this.buttonOfferMoreDish.Text = "Thêm Món";
+            this.buttonOfferMoreDish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonOfferMoreDish.Textcolor = System.Drawing.Color.White;
+            this.buttonOfferMoreDish.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOfferMoreDish.Click += new System.EventHandler(this.buttonDrinkEdit_Click);
             // 
-            // bunifuCustomLabel1
+            // numericUpDown
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(619, 17);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(142, 24);
-            this.bunifuCustomLabel1.TabIndex = 7;
-            this.bunifuCustomLabel1.Text = "Select Room";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            this.numericUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.numericUpDown.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown.Location = new System.Drawing.Point(402, 30);
+            this.numericUpDown.Name = "numericUpDown";
+            this.numericUpDown.Size = new System.Drawing.Size(67, 27);
+            this.numericUpDown.TabIndex = 10;
+            this.numericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panelHeader
+            // plOfferMain
             // 
-            this.panelHeader.Controls.Add(this.txtSearchDrink);
-            this.panelHeader.Controls.Add(this.comboBox);
-            this.panelHeader.Controls.Add(this.buttonSearch);
-            this.panelHeader.Controls.Add(this.bunifuCustomLabel1);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(944, 60);
-            this.panelHeader.TabIndex = 8;
+            this.plOfferMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.plOfferMain.Controls.Add(this.dataGridView1);
+            this.plOfferMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plOfferMain.Location = new System.Drawing.Point(0, 80);
+            this.plOfferMain.Name = "plOfferMain";
+            this.plOfferMain.Size = new System.Drawing.Size(472, 617);
+            this.plOfferMain.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(472, 617);
+            this.dataGridView1.TabIndex = 0;
             // 
             // OfferDrink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.Controls.Add(this.panelHeader);
-            this.Controls.Add(this.paneOfferDrinkLeft);
-            this.Controls.Add(this.dgvOfferDrink);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.Controls.Add(this.flpRoom);
+            this.Controls.Add(this.plOfferLeft);
             this.Name = "OfferDrink";
             this.Size = new System.Drawing.Size(1075, 697);
             this.Load += new System.EventHandler(this.OfferDrink_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOfferDrink)).EndInit();
-            this.paneOfferDrinkLeft.ResumeLayout(false);
-            this.panelHeader.ResumeLayout(false);
-            this.panelHeader.PerformLayout();
+            this.plOfferLeft.ResumeLayout(false);
+            this.plHeaderLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
+            this.plOfferMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtSearchDrink;
-        private Bunifu.Framework.UI.BunifuImageButton buttonSearch;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvOfferDrink;
-        private System.Windows.Forms.Panel paneOfferDrinkLeft;
-        private MetroFramework.Controls.MetroComboBox comboBox;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.Panel panelHeader;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+
+        private System.Windows.Forms.Panel plOfferLeft;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.FlowLayoutPanel flpRoom;
+        private System.Windows.Forms.Panel plHeaderLeft;
+        private System.Windows.Forms.NumericUpDown numericUpDown;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonOfferMoreDish;
+        private System.Windows.Forms.Panel plOfferMain;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
