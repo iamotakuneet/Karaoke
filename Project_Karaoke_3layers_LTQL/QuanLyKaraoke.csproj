@@ -84,12 +84,13 @@
     <Compile Include="ChangeRoom.Designer.cs">
       <DependentUpon>ChangeRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="exitAlert.cs">
+    <Compile Include="frmExitAlert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="exitAlert.Designer.cs">
-      <DependentUpon>exitAlert.cs</DependentUpon>
+    <Compile Include="frmExitAlert.Designer.cs">
+      <DependentUpon>frmExitAlert.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -132,8 +133,8 @@
     <EmbeddedResource Include="ChangeRoom.resx">
       <DependentUpon>ChangeRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="exitAlert.resx">
-      <DependentUpon>exitAlert.cs</DependentUpon>
+    <EmbeddedResource Include="frmExitAlert.resx">
+      <DependentUpon>frmExitAlert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

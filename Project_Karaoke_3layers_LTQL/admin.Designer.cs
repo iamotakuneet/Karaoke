@@ -166,7 +166,6 @@
             this.tbFoodAndDrink.VerticalScrollbarBarColor = true;
             this.tbFoodAndDrink.VerticalScrollbarHighlightOnWheel = false;
             this.tbFoodAndDrink.VerticalScrollbarSize = 10;
-            this.tbFoodAndDrink.Click += new System.EventHandler(this.tbDrink_Click);
             // 
             // panelMainDrink
             // 
@@ -217,7 +216,7 @@
             this.dgvFoodAndDrink.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvFoodAndDrink.Size = new System.Drawing.Size(528, 600);
             this.dgvFoodAndDrink.TabIndex = 0;
-            this.dgvFoodAndDrink.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDrink_CellContentClick);
+
             // 
             // panelTopLeft
             // 
@@ -307,7 +306,7 @@
             this.buttonDrinkView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonDrinkView.Textcolor = System.Drawing.Color.White;
             this.buttonDrinkView.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkView.Click += new System.EventHandler(this.buttonDrinkView_Click);
+ 
             // 
             // buttonDrinkAdd
             // 
@@ -346,7 +345,7 @@
             this.buttonDrinkAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonDrinkAdd.Textcolor = System.Drawing.Color.White;
             this.buttonDrinkAdd.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkAdd.Click += new System.EventHandler(this.buttonDrinkAdd_Click);
+
             // 
             // buttonDrinkEdit
             // 
@@ -385,7 +384,7 @@
             this.buttonDrinkEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonDrinkEdit.Textcolor = System.Drawing.Color.White;
             this.buttonDrinkEdit.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrinkEdit.Click += new System.EventHandler(this.buttonDrinkEdit_Click);
+
             // 
             // panelMainDrinkRight
             // 
@@ -452,7 +451,7 @@
             this.label3.Size = new System.Drawing.Size(104, 22);
             this.label3.TabIndex = 15;
             this.label3.Text = "Category:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // label2
             // 
@@ -513,7 +512,7 @@
             this.txtDrinkID.TabIndex = 10;
             this.txtDrinkID.Text = "Search drink here...";
             this.txtDrinkID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDrinkID.OnValueChanged += new System.EventHandler(this.txtDrinkID_OnValueChanged);
+
             // 
             // panelTopRight
             // 
@@ -525,7 +524,7 @@
             this.panelTopRight.Name = "panelTopRight";
             this.panelTopRight.Size = new System.Drawing.Size(539, 55);
             this.panelTopRight.TabIndex = 9;
-            this.panelTopRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+
             // 
             // buttonDrinkSearch
             // 
@@ -602,7 +601,7 @@
             this.tbRevenue.VerticalScrollbarBarColor = true;
             this.tbRevenue.VerticalScrollbarHighlightOnWheel = false;
             this.tbRevenue.VerticalScrollbarSize = 10;
-            this.tbRevenue.Click += new System.EventHandler(this.tbRevenue_Click);
+
             // 
             // panelMainRevenue
             // 
@@ -613,7 +612,7 @@
             this.panelMainRevenue.Name = "panelMainRevenue";
             this.panelMainRevenue.Size = new System.Drawing.Size(1067, 655);
             this.panelMainRevenue.TabIndex = 2;
-            this.panelMainRevenue.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMainRevenue_Paint);
+
             // 
             // paneldgv
             // 
@@ -711,7 +710,7 @@
             this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 55);
             this.bunifuDatepicker1.TabIndex = 0;
             this.bunifuDatepicker1.Value = new System.DateTime(2018, 4, 17, 21, 3, 16, 979);
-            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
+
             // 
             // bunifuDatepicker2
             // 
@@ -805,7 +804,7 @@
             this.panelAccountHeaderMainLeft.Name = "panelAccountHeaderMainLeft";
             this.panelAccountHeaderMainLeft.Size = new System.Drawing.Size(528, 55);
             this.panelAccountHeaderMainLeft.TabIndex = 1;
-            this.panelAccountHeaderMainLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAccountHeaderMainLeft_Paint);
+
             // 
             // buttonAccountView
             // 
@@ -843,7 +842,7 @@
             this.buttonAccountView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonAccountView.Textcolor = System.Drawing.Color.White;
             this.buttonAccountView.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAccountView.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+
             // 
             // buttonAccountDelete
             // 

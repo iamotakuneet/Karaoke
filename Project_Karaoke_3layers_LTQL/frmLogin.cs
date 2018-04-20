@@ -7,6 +7,8 @@ using Project_Karaoke_3layers_LTQL.Properties;
 
 namespace Project_Karaoke_3layers_LTQL
 {
+    using Project_Karaoke_3layers_LTQL.DAO;
+
     public partial class FLogin : MetroForm
     {
         public FLogin() => InitializeComponent();
@@ -21,28 +23,24 @@ namespace Project_Karaoke_3layers_LTQL
             audio.Play();
         }
 
+        bool Login(string userName, string passWord)
+        {
+
+            return AccountDAO.Instance.Login(userName, passWord);
+        }
+
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (txtLoginUser.Text == @"adminLoli" && txtLoginPassword.Text == @"iamgay")
+            string userName = this.txtLoginUser.Text;
+            string passWord = this.txtLoginPassword.Text;
+            if (this.Login(userName,passWord))
             {
                 Hide();
                 FrmMain fm = new FrmMain();
                 fm.FormClosed += fm_FormClosed;
                 fm.Show();
-                UserAdmin = true;
-                
-               
+                UserAdmin = true;   
             }
-            else if (txtLoginUser.Text == @"userLoli" && txtLoginPassword.Text == @"iamgay")
-            {
-                Hide();
-                FrmMain fm = new FrmMain();
-                fm.FormClosed += fm_FormClosed;
-                fm.Show();
-                
-                UserAdmin = false;
-            }
-
             else
             {
                 errorLoginAudio();

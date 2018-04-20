@@ -55,7 +55,7 @@ namespace Project_Karaoke_3layers_LTQL.DAO
         }//ExcuteQuery
 
 
-        public int ExecuteNonQuery(string query, object[] parameter) //trả về sống dòng thành công
+        public int ExecuteNonQuery(string query, object[] parameter=null) //trả về sống dòng thành công
         {
             
             int data = 0;
@@ -89,7 +89,7 @@ namespace Project_Karaoke_3layers_LTQL.DAO
         }//ExcuteNonQuery
 
 
-        public object ExecuteScalar(string query, object[] parameter) //số lượng trả ra, phù hợp với select count(*)
+        public object ExecuteScalar(string query, object[] parameter=null) //số lượng trả ra, phù hợp với select count(*)
         {
 
             object data = 0;
