@@ -54,6 +54,9 @@ namespace Project_Karaoke_3layers_LTQL
         private void buttonMenu_Click(object sender, EventArgs e)
         {
             //Ẩn Slide;
+            
+            this.Size = new Size(1255, 735);
+            this.hideSlide.ShowSync(this.panelExit);
             slideMenu.Width = 73;
             playAudio();
             buttonShow.Visible = true;
@@ -71,6 +74,8 @@ namespace Project_Karaoke_3layers_LTQL
             if (slideMenu.Width == 73)
             {
                 //Hiện Side
+                this.Size = new Size(1330, 735);
+                this.hideSlide.ShowSync(this.panelExit);
                 slideMenu.Width = 255;
                 playAudio();
                 buttonShow.Visible = false;

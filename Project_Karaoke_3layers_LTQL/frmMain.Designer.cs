@@ -66,6 +66,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.DragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.hideProcessBarRoom = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.BorderRadius = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panelExit = new System.Windows.Forms.Panel();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonShow)).BeginInit();
@@ -73,6 +74,7 @@ namespace Project_Karaoke_3layers_LTQL
             ((System.ComponentModel.ISupportInitialize)(this.Home)).BeginInit();
             this.slideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
+            this.panelExit.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -90,10 +92,9 @@ namespace Project_Karaoke_3layers_LTQL
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.panelHeader.Controls.Add(this.buttonMinimize);
+            this.panelHeader.Controls.Add(this.panelExit);
             this.panelHeader.Controls.Add(this.bunifuCustomLabel1);
             this.panelHeader.Controls.Add(this.buttonShow);
-            this.panelHeader.Controls.Add(this.buttonExit);
             this.hideProcessBarRoom.SetDecoration(this.panelHeader, BunifuAnimatorNS.DecorationType.None);
             this.hideSlide.SetDecoration(this.panelHeader, BunifuAnimatorNS.DecorationType.None);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -107,15 +108,16 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonMinimize.BackColor = System.Drawing.Color.Transparent;
             this.hideProcessBarRoom.SetDecoration(this.buttonMinimize, BunifuAnimatorNS.DecorationType.None);
             this.hideSlide.SetDecoration(this.buttonMinimize, BunifuAnimatorNS.DecorationType.None);
+            this.buttonMinimize.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonMinimize.Image = ((System.Drawing.Image)(resources.GetObject("buttonMinimize.Image")));
             this.buttonMinimize.ImageActive = null;
-            this.buttonMinimize.Location = new System.Drawing.Point(1264, 9);
+            this.buttonMinimize.Location = new System.Drawing.Point(0, 0);
             this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(24, 24);
+            this.buttonMinimize.Size = new System.Drawing.Size(25, 38);
             this.buttonMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonMinimize.TabIndex = 3;
             this.buttonMinimize.TabStop = false;
-            this.buttonMinimize.Zoom = 10;
+            this.buttonMinimize.Zoom = 12;
             this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
             // bunifuCustomLabel1
@@ -152,11 +154,12 @@ namespace Project_Karaoke_3layers_LTQL
             this.buttonExit.BackColor = System.Drawing.Color.Transparent;
             this.hideProcessBarRoom.SetDecoration(this.buttonExit, BunifuAnimatorNS.DecorationType.None);
             this.hideSlide.SetDecoration(this.buttonExit, BunifuAnimatorNS.DecorationType.None);
+            this.buttonExit.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonExit.Image = ((System.Drawing.Image)(resources.GetObject("buttonExit.Image")));
             this.buttonExit.ImageActive = null;
-            this.buttonExit.Location = new System.Drawing.Point(1294, 9);
+            this.buttonExit.Location = new System.Drawing.Point(43, 0);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(24, 24);
+            this.buttonExit.Size = new System.Drawing.Size(24, 38);
             this.buttonExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonExit.TabIndex = 4;
             this.buttonExit.TabStop = false;
@@ -609,6 +612,19 @@ namespace Project_Karaoke_3layers_LTQL
             this.BorderRadius.ElipseRadius = 5;
             this.BorderRadius.TargetControl = this;
             // 
+            // panelExit
+            // 
+            this.panelExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
+            this.panelExit.Controls.Add(this.buttonMinimize);
+            this.panelExit.Controls.Add(this.buttonExit);
+            this.hideProcessBarRoom.SetDecoration(this.panelExit, BunifuAnimatorNS.DecorationType.None);
+            this.hideSlide.SetDecoration(this.panelExit, BunifuAnimatorNS.DecorationType.None);
+            this.panelExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelExit.Location = new System.Drawing.Point(1263, 0);
+            this.panelExit.Name = "panelExit";
+            this.panelExit.Size = new System.Drawing.Size(67, 38);
+            this.panelExit.TabIndex = 5;
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -637,6 +653,7 @@ namespace Project_Karaoke_3layers_LTQL
             this.slideMenu.ResumeLayout(false);
             this.slideMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
+            this.panelExit.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -671,5 +688,6 @@ namespace Project_Karaoke_3layers_LTQL
         private BunifuImageButton buttonExit;
         private BunifuElipse BorderRadius;
         private Panel panelMain;
+        private Panel panelExit;
     }
 }

@@ -113,5 +113,14 @@ namespace Project_Karaoke_3layers_LTQL
 
         #endregion
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void flpRoom_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }//
 }//
